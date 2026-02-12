@@ -1,0 +1,23 @@
+{
+  "categoria": "Pizzas",
+  "label": "Pizzas",
+  "nombre_ingles": "Pizzas",
+  "nota": "GR (Grande) / CH (Chica)",
+  "items": [
+    { "id": 1, "nombre": "Muzzarella", "descripcion": "Mozzarella", "precio_gr": 19500, "precio_ch": 16900 },
+    { "id": 2, "nombre": "Caprese", "descripcion": "Tomato, cheese, basil", "precio_gr": 23800, "precio_ch": 21200 },
+    { "id": 3, "nombre": "Fugazza", "descripcion": "Onion", "precio_gr": 20800, "precio_ch": 18100 },
+    { "id": 4, "nombre": "Verdura", "descripcion": "Cheese, vegetable", "precio_gr": 23800, "precio_ch": 21200 },
+    { "id": 5, "nombre": "Fugazzetta", "descripcion": "Cheese & onion", "precio_gr": 22600, "precio_ch": 20300 },
+    { "id": 6, "nombre": "Fugazzetta rellena", "descripcion": "Stuffed cheese & onion", "precio_gr": 35800, "precio_ch": 32100 },
+    { "id": 7, "nombre": "Cancha", "descripcion": "Naked cheeseless", "precio_gr": 19300, "precio_ch": 17400 },
+    { "id": 8, "nombre": "Roquefort y jamon", "descripcion": "Blue cheese & ham", "precio_gr": 27800, "precio_ch": 22100 },
+    { "id": 9, "nombre": "Anchoas", "descripcion": "Anchovies", "precio_gr": 23500, "precio_ch": 21000 },
+    { "id": 10, "nombre": "Jamón y morron", "descripcion": "Ham & bell pepper", "precio_gr": 27800, "precio_ch": 22100 },
+    { "id": 11, "nombre": "Napolitana", "descripcion": "Cheese, tomato, slices", "precio_gr": 23800, "precio_ch": 21200 },
+    { "id": 12, "nombre": "Cheddar y panceta", "descripcion": "Cheddar & bacon", "precio_gr": 32900, "precio_ch": 25100 },
+    { "id": 13, "nombre": "Calabresa", "descripcion": "Cheese & longaniza", "precio_gr": 23800, "precio_ch": 21200 },
+    { "id": 14, "nombre": "Jamón crudo y rúcula", "descripcion": "Prosciutto & arugula", "precio_gr": 32900, "precio_ch": 25100 },
+    { "id": 15, "nombre": "Jamón", "descripcion": "Cheese & ham", "precio_gr": 22100, "precio_ch": 19700 }
+  ]
+}

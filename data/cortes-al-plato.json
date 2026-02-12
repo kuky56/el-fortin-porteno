@@ -1,0 +1,29 @@
+{
+  "categoria": "Cortes al Plato y Para Acompañar",
+  "label": "Cortes",
+  "subcategorias": [
+    {
+      "nombre": "Cortes al Plato",
+      "nombre_ingles": "Entree w/Side",
+      "items": [
+        { "id": 1, "nombre": "Tira de asado", "descripcion": "Grilled short rib", "precio": 24400 },
+        { "id": 2, "nombre": "Vacio", "descripcion": "Flank steak", "precio": 24400 },
+        { "id": 3, "nombre": "Bondiola", "descripcion": "Pork shoulder", "precio": 24400 },
+        { "id": 4, "nombre": "Costillas de cerdo", "descripcion": "Pork ribs", "precio": 18900 },
+        { "id": 5, "nombre": "Entraña", "descripcion": "Skirt steak", "precio": 34400 },
+        { "id": 6, "nombre": "Pollo deshuesado", "descripcion": "Grilled chicken", "precio": 16200 }
+      ]
+    },
+    {
+      "nombre": "Para Acompañar",
+      "nombre_ingles": "Sides Plates",
+      "items": [
+        { "id": 7, "nombre": "Chorizo", "descripcion": "Chorizo sausage", "precio": 6600 },
+        { "id": 8, "nombre": "Morcilla", "descripcion": "Blood sausage", "precio": 6600 },
+        { "id": 9, "nombre": "Chinchulínes", "descripcion": "Grilled intestine", "precio": 13200 },
+        { "id": 10, "nombre": "Riñon", "descripcion": "Grilled kidney", "precio": 13200 },
+        { "id": 11, "nombre": "Provoleta", "descripcion": "Grilled provoletta cheese", "precio": 12400 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "categoria": "Empanadas",
+  "label": "Empanadas",
+  "nombre_ingles": "Empanadas",
+  "items": [
+    { "id": 1, "nombre": "Chorizo y champiñon", "descripcion": "Chorizo sausage & mushroom", "precio": 4000 },
+    { "id": 2, "nombre": "Bondiola barbacoa", "descripcion": "BBQ pork shoulder", "precio": 4000 },
+    { "id": 3, "nombre": "Vacio y provoleta", "descripcion": "Steak & provoletta cheese", "precio": 4000 }
+  ]
+}

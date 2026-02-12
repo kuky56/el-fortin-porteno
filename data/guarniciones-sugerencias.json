@@ -1,0 +1,30 @@
+{
+  "categoria": "Guarniciones y Sugerencias",
+  "label": "Guarniciones",
+  "subcategorias": [
+    {
+      "nombre": "Guarniciones",
+      "nombre_ingles": "Sides",
+      "nota": "GR (Grande) / CH (Chico)",
+      "items": [
+        { "id": 1, "nombre": "Papas fritas", "descripcion": "French fries", "precio_gr": 8000, "precio_ch": 5000 },
+        { "id": 2, "nombre": "Arroz", "descripcion": "Rice", "precio_gr": 8000, "precio_ch": 5000 },
+        { "id": 3, "nombre": "Batatas fritas", "descripcion": "Sweet potatoes fries", "precio_gr": 8000, "precio_ch": 5000 },
+        { "id": 4, "nombre": "Pure (papa, calabaza, mixto)", "descripcion": "Mashed potatoes pumpkin", "precio_gr": 8000, "precio_ch": 5000 },
+        { "id": 5, "nombre": "Ensalada mixta", "descripcion": "Side salad", "precio_gr": 8000, "precio_ch": 5000 },
+        { "id": 6, "nombre": "Huevo frito (2)", "descripcion": "Fried egg x2", "precio": 4000 }
+      ]
+    },
+    {
+      "nombre": "Sugerencias",
+      "nombre_ingles": "Suggest Plates",
+      "items": [
+        { "id": 7, "nombre": "Matambre arrollado c rusa", "descripcion": "Spanish-style lentils", "precio": 15200 },
+        { "id": 8, "nombre": "Salpicon de ave", "descripcion": "Spanish-style tripe", "precio": 12100 },
+        { "id": 9, "nombre": "Pastel de papa", "descripcion": "Potato cake filled w meat", "precio": 12900 },
+        { "id": 10, "nombre": "Arroz con pollo", "descripcion": "Chicken w rice", "precio": 12700 },
+        { "id": 11, "nombre": "Wok de cerdo y vegetales", "descripcion": "Stewed veal", "precio": 13900 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+/* ============================= */
+/* EVENTOS SOCIALES */
+/* ============================= */
+
+.eventos-sociales {
+  padding: 20px 20px;
+  background: #F8F5F0;
+  text-align: center;
+}
+
+.eventos-header h2 {color: #8b0000;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.eventos-header p {font-family: 'Lato', sans-serif;
+  max-width: 750px;
+  margin: 0 auto 50px auto;
+  font-size: 1.3rem;
+  line-height: 1.6;color:#49453d ;
+}
+
+/* GRID */
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.eventos-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.eventos-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* BOTÓN */
+.eventos-cta {
+  margin-top: 20px;margin-bottom: 50px;
+}
+/* lo saco porque uso el otro boton */
+/* .btn-evento-whatsapp {
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  padding: 16px 40px;
+  background: #25D366;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-evento-whatsapp:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+ */
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .eventos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .eventos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .eventos-grid img {
+    height: 220px;
+  }
+
+ /*  .btn-evento-whatsapp {
+    width: 100%;
+    max-width: 320px;
+  } */
+}

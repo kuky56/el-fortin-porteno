@@ -1,0 +1,35 @@
+{
+  "categoria": "Milanesas de Pollo",
+  "label": "Pollo",
+  "nombre_ingles": "Chicken Milanese",
+  "items": [
+    {
+      "id": 1,
+      "nombre": "Suiza: Bechamel - parmesano - morron - arvejas",
+      "descripcion": "White sauce - parmesan - red bell pepper - peas",
+      "precio_para_2": 39300,
+      "precio_para_4": 72900
+    },
+    {
+      "id": 2,
+      "nombre":"4 quesos: Parmesano - provolone - roquefort - muzzarella",
+      "descripcion": "Parmesan - provolone - blue cheese - mozzarella",
+      "precio_para_2": 39300,
+      "precio_para_4": 72900
+    },
+    {
+      "id": 3,
+      "nombre": "Azul y blanca: Roquefort y bechamel",
+      "descripcion": "Blue cheese - white sauce",
+      "precio_para_2": 39300,
+      "precio_para_4": 72900
+    },
+    {
+      "id": 4,
+      "nombre": "Maryland: Crema de choclo - banana frita - morron",
+      "descripcion": "Creamed corn - fried banana - bell pepper",
+      "precio_para_2": 39300,
+      "precio_para_4": 72900
+    }
+  ]
+}

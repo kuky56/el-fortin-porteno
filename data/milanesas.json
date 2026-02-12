@@ -1,0 +1,15 @@
+{
+  "categoria": "Milanesas",
+  "label": "Milanesas",
+  "nombre_ingles": "Milanese",
+  "nota": "Para 2 / Para 4",
+  "items": [
+    { "id": 1, "nombre": "Fortin: Bechamel - prosciutto - rucula - parmesano", "descripcion": "White sauce - prosciutto - arugula - parmesan", "precio_para_2": 47600, "precio_para_4": 81200 },
+    { "id": 2, "nombre": "Napolitana: Salsa de tomate - muzzarella - jamon", "descripcion": "Pasta sauce - mozzarella - ham", "precio_para_2": 39300, "precio_para_4": 72900 },
+    { "id": 3, "nombre": "Fugazzetta: Muzzarella - cebolla", "descripcion": "Mozzarella - onion", "precio_para_2": 39300, "precio_para_4": 72900 },
+    { "id": 4, "nombre": "Bomba: Panceta - cheddar - huevo frito - verdeo", "descripcion": "Bacon - cheddar - fried egg - chives", "precio_para_2": 47600, "precio_para_4": 81200 },
+    { "id": 5, "nombre": "Caprese: Muzzarella - tomate - albahaca", "descripcion": "Mozzarella - tomato slices - basil", "precio_para_2": 39300, "precio_para_4": 72900 },
+    { "id": 6, "nombre": "Riojana: Jamon - morron - huevo frito - arvejas", "descripcion": "Ham - red bell pepper - fried egg - peas", "precio_para_2": 39300, "precio_para_4": 72900 },
+    { "id": 7, "nombre": "Española: salsa de tomate, chorizo, morrón, cebolla", "descripcion": "Pasta sauce, chorizo - red bell pepper, onion", "precio_para_2": 39300, "precio_para_4": 72900 }
+  ]
+}

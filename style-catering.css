@@ -1,0 +1,314 @@
+
+/* =================================================
+   CARDS SERVICIOS
+================================================= */
+
+.cards-servicios {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f5f0;
+}
+
+.cards-servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-family: 'Cabin', cursive;
+  color: #8b0000;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: #b22222;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-family: 'Lato', cursive;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* =================================================
+   LISTA SERVICIOS
+================================================= */
+
+.servicios-catering {
+  background: #ffffff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.servicios-catering h3 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  font-family: 'Cabin', sans-serif;
+  color: #8b0000;
+}
+
+.servicios-catering ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+}
+
+.servicios-catering ul li {
+  background: #f8f5f0;
+  margin-bottom: 15px;
+  padding: 18px 20px;
+  border-radius: 10px;
+font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.servicios-catering ul li:hover {
+  transform: translateX(8px);
+  background: #b22222;
+  color: #fff;
+}
+
+/* =================================================
+   GALERÍA q saque
+================================================= */
+
+.galeria-eventos {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.galeria-eventos h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* =================================================
+   CTA PRESUPUESTO
+================================================= */
+
+.cta-presupuesto {
+  background: linear-gradient(135deg, #8b0000, #b22222);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-presupuesto h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-presupuesto p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.btn-presupuesto-grande {
+  background: #fff;
+  color: #8b0000;
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;font-size: 1.3rem;
+}
+
+.btn-presupuesto-grande:hover {
+  background: #f2f2f2;
+  transform: scale(1.07);
+}
+.banner-catering {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.banner-catering img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-content {
+  color: #fff;
+  max-width: 800px;
+}
+
+.banner-content h2 {font-family: 'Cabin', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.banner-content p {font-family: 'Lato', cursive;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+/* BOTÓN */
+
+.btn-banner {
+  display: inline-block;
+  background: #b22222;
+  color: #fff;
+  padding: 15px 40px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  font-size: 1.3rem;
+}
+
+.btn-banner:hover {
+  background: #8b0000;
+  transform: scale(1.07);
+}
+
+
+
+/* SVG */
+.cards-servicios img, .inicio-catering img, .servicios-catering img {
+  width: 120px;
+
+  height: auto;
+  opacity: 0.9;
+}
+
+
+
+/* Ajustes finos */
+.svg-izq {
+  margin-right: 30px;
+}
+
+.svg-der {
+  margin-left: 30px;
+  transform: scaleX(-1);
+}
+
+.tag{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* =================================================
+   MEDIA QUERY ÚNICA
+================================================= */
+
+@media (max-width: 768px) {
+
+
+  .cards-servicios,
+  .servicios-catering,
+  .galeria-eventos,
+  .cta-presupuesto {
+    padding: 50px 15px;
+  }
+
+  .cards-servicios h2,
+  .galeria-eventos h2,
+  .cta-presupuesto h2 {
+    font-size: 1.6rem;
+  }
+
+  .servicios-catering h3 {
+    font-size: 1.4rem;
+  }
+
+  .galeria-grid img {
+    height: 200px;
+  }
+
+  .btn-presupuesto-grande {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+  }
+.banner-catering {
+  height: 350px;
+}
+ .banner-overlay h2 {
+   font-size: 1.6rem;
+ }
+.banner-content p {
+  font-size: 1.2rem;
+}
+ .btn-banner {
+   padding: 12px 25px;
+   font-size: 1.2rem;
+ }
+.cards-servicios img,
+.inicio-catering img,
+.servicios-catering img{
+  display: none;
+}
+
+}

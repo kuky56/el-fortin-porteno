@@ -1,0 +1,13 @@
+{
+  "categoria": "Entradas",
+  "label": "Entradas",
+  "nombre_ingles": "Appetizers",
+  "items": [
+    { "id": 1, "nombre": "Papas c cheddar, panceta y verdeo", "descripcion": "Cheesy bacon fries", "precio": 15400 },
+    { "id": 2, "nombre": "Papas c cheddar", "descripcion": "Cheesy fries", "precio": 12700 },
+    { "id": 3, "nombre": "Bastones de muzza", "descripcion": "Mozzarella sticks", "precio": 14200 },
+    { "id": 4, "nombre": "Tequeños (6)", "descripcion": "Venezuelan mozzarella sticks", "precio": 13600 },
+    { "id": 5, "nombre": "Tablita de fiambres", "descripcion": "Meat & cheese plate", "precio": 22700 },
+    { "id": 6, "nombre": "Rabas a la romana", "descripcion": "Picked eggplant dip", "precio": 22600 }
+  ]
+}

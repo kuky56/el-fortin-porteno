@@ -1,0 +1,190 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5d3b3;
+  color: #fff;
+}
+
+/* ============================================================
+   ESTILOS GLOBALES Y CONTENEDOR
+   ============================================================ */
+#menu-digital {
+  font-family: 'Georgia', serif;
+  max-width: 950px;
+  margin: 20px auto;
+  background: #f5f3f0;
+  /* Fondo base para que resalten las tarjetas blancas */
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #2c2c2c;
+}
+
+/* Cabecera */
+#menu-digital .header {
+  background: linear-gradient(135deg, #8b7355 0%, #6b5744 100%);
+  color: #f5f3f0;
+  padding: 35px 25px;
+  text-align: center;
+}
+
+#menu-digital .header h2 {
+  font-size: 3em;
+  font-family: 'Damion', cursive;
+  
+    color: var(--btn-primario);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#menu-digital .instagram {
+  color: #e2e1df;
+  font-weight: bold;
+}
+
+/* ============================================================
+   NAVEGACIÓN (BOTONES DE CATEGORÍA)
+   ============================================================ */
+.menu-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  background: #f8f6f3;
+  border-bottom: 2px solid #e0d7cc;
+}
+
+.tab-btn {
+  padding: 12px;
+  border: 2px solid #e0d7cc;
+  background: white;
+  color: #6b5744;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: #4E2E24;
+  color: #f5f3f0;
+  border-color: #4E2E24;
+}
+
+/* ============================================================
+   CONTENIDO Y PLATOS (EL ESTILO DE LA IMAGEN)
+   ============================================================ */
+.menu-content {
+  padding: 30px;
+}
+
+.category-title {
+  font-size: 2em;
+  color: #6b5744;
+  text-align: center;
+  border-bottom: 3px solid #d4af37;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.subcategory-title {
+  font-size: 1.4em;
+  color: #8b7355;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px 0 20px;
+  letter-spacing: 1px;
+}
+
+/* --- TARJETA DEL PLATO --- */
+.menu-item {
+  margin-bottom: 20px;
+  /* Separa los platos para que no se peguen */
+  padding: 20px 25px;
+  border-radius: 12px;
+  /* Bordes redondeados de la imagen */
+  background: #fafaf8;
+  /* Color crema muy suave inicial */
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+  /* Espacio para la línea dorada */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* --- EFECTO HOVER --- */
+.menu-item:hover {
+  background: #ffffff;
+  /* Fondo blanco puro al resaltar */
+  border-left-color: #d4af37;
+  /* Aparece la línea dorada vertical */
+  transform: translateY(-4px);
+  /* Se eleva sutilmente hacia arriba */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  /* Sombra profunda de la imagen */
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.item-name {
+  font-size: 1em;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #6b5744;
+}
+
+.item-description {
+  font-size: 0.95em;
+  color: #8b7355;
+  /* Color descriptivo más suave */
+  font-style: italic;
+}
+
+/* Notas especiales */
+.note {
+  background: #fff9e6;
+  padding: 15px;
+  border-left: 4px solid #d4af37;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 0.92em;
+}
+/* letras de pararfos */
+.seguiremos p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #3b2a1a;
+  text-align: left;
+}
+/* Ajustes para Móviles */
+@media (max-width: 768px) {
+  .menu-tabs {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+
+  .item-header {
+    flex-direction: row;
+  }
+
+  .menu-item:hover {
+    transform: translateY(-2px);
+  }
+}

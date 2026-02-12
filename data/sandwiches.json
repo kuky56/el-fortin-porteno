@@ -1,0 +1,18 @@
+{
+  "categoria": "Sandwiches",
+  "label": "Sandwiches",
+  "nombre_ingles": "Sandwiches",
+  "items": [
+    { "id": 1, "nombre": "Choripan c fritas", "descripcion": "Chorizo sausage sandwich w fries", "precio": 7600 },
+    { "id": 2, "nombre": "Morcipan c fritas", "descripcion": "Blood sausage sandwich w fries", "precio": 7600 },
+    { "id": 3, "nombre": "Chinchupan c fritas", "descripcion": "Grilled intestine sandwich w fries", "precio": 7600 },
+    { "id": 4, "nombre": "Vacio c fritas", "descripcion": "Steak sandwich w fries", "precio": 14800 },
+    { "id": 5, "nombre": "Bondiola c fritas", "descripcion": "Pork shoulder sandwich w fries", "precio": 14800 },
+    { "id": 6, "nombre": "Milanesa", "descripcion": "Breaded veal cutlet sandwich", "precio": 9900, "precio_completo": 10900 },
+    { "id": 7, "nombre": "Suprema", "descripcion": "Breaded chicken cutlet sandwich", "precio": 9900, "precio_completo": 10900 },
+    { "id": 8, "nombre": "Churrasquito (pollo o carne)", "descripcion": "Steak sandwich", "precio": 9900, "precio_completo": 10900 },
+    { "id": 9, "nombre": "Prosciutto y queso", "descripcion": "Prosciutto & cheese sandwich", "precio": 9900 },
+    { "id": 10, "nombre": "Vegetariano: lechuga, tomate, zanahoria, huevo, queso", "descripcion": "Lettuce, tomato, carrot, egg, cheese", "precio": 9900 },
+    { "id": 11, "nombre": "Simple: solo fritas", "descripcion": "Only fries", "nota": "Completo: lechuga, tomate, jamon, queso, huevo, fritas (Lettuce, tomato, ham, cheese, egg, fries)" }
+  ]
+}

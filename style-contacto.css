@@ -1,0 +1,176 @@
+/* ========================= */
+/* CONTACTO BODEGÓN */
+/* ========================= */
+
+.contacto-bodegon {
+  background-color: #f4e6d0;
+  /* crema cálido */
+  padding: 50px 20px;
+}
+
+.titulo-seccion {
+  font-family: 'Cabin', cursive;
+  text-align: center;
+  font-size: 2em;
+  color: #8b0000;
+  margin-bottom: 80px;
+  letter-spacing: 1px;
+}
+
+.intro-contacto {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  color: #333;
+}
+
+.datos-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.dato {font-family: 'Lato', cursive;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+
+.dato a {border: 1.5px solid #8b0000;padding: 30px 10px 10px 10px;
+  border-radius: 8px;
+  color: #8b0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dato a:hover {
+  color: #b22222;
+}
+
+/* SUCURSALES */
+
+.sucursales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.sucursal-card {
+  background: white;
+  padding: 20px;
+  border: 3px solid #8b0000;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sucursal-card h3 {font-family: 'Cabin', cursive;font-size: 1.5em;
+  text-align: center;
+  color: #8b0000;
+  margin-bottom: 15px;
+}
+
+.sucursal-card iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* NEWSLETTER */
+
+.newsletter-bodegon {
+  text-align: center;
+  background: #8b0000;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.newsletter-bodegon h3 {
+  font-family: 'Cabin', cursive;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.newsletter-bodegon p{
+  font-family: 'Lato', cursive;
+  margin-bottom: 10px;
+}
+
+
+.newsletter-bodegon input {
+  padding: 12px;
+  width: 260px;
+  max-width: 100%;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.newsletter-bodegon button {
+  padding: 12px 25px;
+  background: #d4af37;
+  /* dorado */
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.newsletter-bodegon button:hover {
+  background: #f1c40f;
+}
+
+
+/* SVG */
+.titulo-seccion img
+ {
+  width: 120px;
+
+  height: auto;
+  opacity: 0.9;
+}
+
+
+
+/* Ajustes finos */
+.svg-izq {
+  margin-right: 30px;
+}
+
+.svg-der {
+  margin-left: 30px;
+  transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .titulo-seccion {
+    font-size: 30px;
+  }
+
+  .newsletter-bodegon input {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+
+  .newsletter-bodegon button {
+    width: 100%;
+  }
+.titulo-seccion img{
+  display: none;
+}
+}

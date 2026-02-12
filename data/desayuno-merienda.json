@@ -1,0 +1,15 @@
+{
+  "categoria": "Desayuno y Merienda",
+  "label": "Desayuno",
+  "nombre_ingles": "Breakfast & Brunch",
+  "items": [
+    { "id": 1, "nombre": "Cafe con leche - 2 medialunas", "descripcion": "Coffee w milk - 2 croissant", "precio": 4950 },
+    { "id": 2, "nombre": "Cafe con leche - 1/2 tostado", "descripcion": "Coffee w milk - 1/2 ham&cheese sandwich", "precio": 6900 },
+    { "id": 3, "nombre": "Cortado americano - 1 medialuna", "descripcion": "Coffee - 1 croissant", "precio": 4200 },
+    { "id": 4, "nombre": "Licuado de banana - 1/2 tostado", "descripcion": "Banana smoothie - 1/2 ham&cheese sandwich", "precio": 9500 },
+    { "id": 5, "nombre": "Exprimido de naranja - 1/2 tostado", "descripcion": "Fresh orange juice - 1/2 ham&cheese sandwich", "precio": 8500 },
+    { "id": 6, "nombre": "2 licuados - 4 medialunas de jamon y queso", "descripcion": "2 smoothies - 4 ham&cheese croissants", "precio": 21400 },
+    { "id": 7, "nombre": "Americano: Cafe c leche - huevo revuelto - panceta - pan tostado - exprimido de naranja", "descripcion": "Eggs, bacon, juice, bread, coffee w milk", "precio": 10900 },
+    { "id": 8, "nombre": "2 infusiones: te o cafe - 2 exprimidos - tostadas - mermelada o queso", "descripcion": "2 tea or coffee - 2 juices - 2 pudding - seasonal fruits", "precio": 14100 }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "categoria": "Hamburguesas y Tartas",
+  "label": "Hamburguesas",
+  "subcategorias": [
+    {
+      "nombre": "Hamburguesas",
+      "nombre_ingles": "Hamburgers",
+      "items": [
+        { "id": 1, "nombre": "Simple: Pan - carne - fritas", "descripcion": "Bun - patty - fries", "precio": 9900 },
+        { "id": 2, "nombre": "Completa: Pan - carne - lechuga - tomate - jamon - queso - fritas", "descripcion": "Bun - patty - ham - cheese - lettuce - tomato - fried egg - fries", "precio": 10900 },
+        { "id": 3, "nombre": "Chamuyera: carne x 2 - lechuga - tomate - panceta - cheddar - huevo - fritas", "descripcion": "Bun-patty x 2 - lettuce-tomato-bacon-cheddar-fried egg-fries", "precio": 16500 }
+      ]
+    },
+    {
+      "nombre": "Tartas",
+      "nombre_ingles": "Pie (not dessert pie)",
+      "items": [
+        { "id": 4, "nombre": "Jamon y queso", "descripcion": "Ham & cheese", "precio": 12500 },
+        { "id": 5, "nombre": "Calabaza y queso", "descripcion": "Pumpkin & cheese", "precio": 10900 },
+        { "id": 6, "nombre": "Verdura y queso", "descripcion": "Vegetable & cheese", "precio": 10900 }
+      ]
+    }
+  ]
+}

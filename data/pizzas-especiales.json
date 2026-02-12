@@ -1,0 +1,9 @@
+{
+  "categoria": "Pizzas Especiales",
+  "label": "Pizzas Especiales",
+  "nombre_ingles": "Special Pizzas",
+  "items": [
+    { "id": 1, "nombre": "El Fortin", "descripcion": "Muzzarella - jamon - tomates secos - albahaca - parmesano. Mozzarella cheese - ham - dried tomato - basil - parmesan cheese", "precio": 32900 },
+    { "id": 2, "nombre": "Del Maestro", "descripcion": "Rellena: muzzarella - jamon - verdeo - huevo duro - morron - tomate. Filled with: mozzarella - ham - spring onion - hard-boiled egg - bell pepper - tomato", "precio": 32900 }
+  ]
+}

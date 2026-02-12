@@ -1,0 +1,13 @@
+{
+  "categoria": "Ensaladas",
+  "label": "Ensaladas",
+  "nombre_ingles": "Salads",
+  "items": [
+    { "id": 1, "nombre": "Fortin: Rucula - prosciutto - parmesano - croutons - aceitunas negras", "descripcion": "Arugula - prosciutto - parmesan - croutons - black olives", "precio": 13200 },
+    { "id": 2, "nombre": "Campestre: Lechuga - remolacha - huevo duro - zanahoria - pollo", "descripcion": "Beets - hard boiled egg - carrots - lettuce - chicken", "precio": 13200 },
+    { "id": 3, "nombre": "Caprese: Tomate - albahaca - queso - aceitunas", "descripcion": "Tomato slices - basil - cheese - olives", "precio": 13200 },
+    { "id": 4, "nombre": "Del chef: Arroz - atun - cebolla - huevo duro - choclo", "descripcion": "Rice - tuna - onion - hard boiled egg - corn", "precio": 13200 },
+    { "id": 5, "nombre": "Caesar: Pollo - lechuga - croutons - queso - salsa caesar", "descripcion": "Chicken - lettuce - croutons - cheese - caesar dressing", "precio": 13200 },
+    { "id": 6, "nombre": "Especial: Lechuga - zanahoria - huevo duro - atun - mix de semillas", "descripcion": "Ham - red bell pepper - fried egg - peas", "precio": 13200 }
+  ]
+}

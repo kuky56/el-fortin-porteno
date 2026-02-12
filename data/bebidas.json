@@ -1,0 +1,40 @@
+{
+  "categoria": "Bebidas",
+  "label": "Bebidas",
+  "subcategorias": [
+    {
+      "nombre": "Sin Alcohol",
+      "items": [
+        { "id": 1, "nombre": "Gaseosa 500 ml", "descripcion": "Soda pop", "precio": 3500 },
+        { "id": 2, "nombre": "Gaseosa 1.5 L", "descripcion": "Soda pop", "precio": 8800 },
+        { "id": 3, "nombre": "Levite 500 ml", "descripcion": "Juice", "precio": 3500 },
+        { "id": 4, "nombre": "Levite 1.5 L", "descripcion": "Juice", "precio": 8800 },
+        { "id": 5, "nombre": "Agua 500 ml", "descripcion": "Water", "precio": 3500 },
+        { "id": 6, "nombre": "Agua 1.5 L", "descripcion": "Water", "precio": 8800 },
+        { "id": 7, "nombre": "Soda 500 ml", "descripcion": "Soda water", "precio": 3500 },
+        { "id": 8, "nombre": "Coca cola 1.75 L", "descripcion": "Coke", "precio": 9500 },
+        { "id": 9, "nombre": "Malta 500 ml", "descripcion": "Sugar cane drink", "precio": 3500 }
+      ]
+    },
+    {
+      "nombre": "Con Alcohol",
+      "items": [
+        { "id": 10, "nombre": "Pinta artesanal", "descripcion": "Pint craft beer", "precio": 7500 },
+        { "id": 11, "nombre": "Fernet c coca", "descripcion": "Fernet w coke", "precio": 8800 },
+        { "id": 12, "nombre": "Porron artesanal 330 ml", "descripcion": "Bottle craft beer", "precio": 6500 },
+        { "id": 13, "nombre": "Gancia", "descripcion": "Wine aperitif", "precio": 8800 },
+        { "id": 14, "nombre": "Imperial lata", "descripcion": "Can - Lager", "precio": 5700 },
+        { "id": 15, "nombre": "Cinzano", "descripcion": "Vermouth", "precio": 8800 },
+        { "id": 16, "nombre": "Miller lata", "descripcion": "Can - Lager", "precio": 6200 },
+        { "id": 17, "nombre": "Campari", "descripcion": "Aperitif", "precio": 8800 },
+        { "id": 18, "nombre": "Heineken lata", "descripcion": "Can - Lager", "precio": 6600 },
+        { "id": 19, "nombre": "Nacional", "descripcion": "Draft beer", "precio": 8800 },
+        { "id": 20, "nombre": "Imperial 1 L", "descripcion": "Lager - 1 liter", "precio": 10100 },
+        { "id": 21, "nombre": "Importado", "descripcion": "Imported", "precio": 20200 },
+        { "id": 22, "nombre": "Miller 1 L", "descripcion": "Lager - 1 Liter", "precio": 10800 },
+        { "id": 23, "nombre": "Copa de vino", "descripcion": "Glass of wine", "precio": 5400 },
+        { "id": 24, "nombre": "Heineken 1 L", "descripcion": "Lager - 1 Liter", "precio": 11600 }
+      ]
+    }
+  ]
+}

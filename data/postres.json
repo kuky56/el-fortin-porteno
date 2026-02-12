@@ -1,0 +1,12 @@
+{
+  "categoria": "Postres",
+  "label": "Postres",
+  "nombre_ingles": "Desserts",
+  "items": [
+    { "id": 1, "nombre": "Flan casero", "descripcion": "Homemade flan", "precio": 5500 },
+    { "id": 2, "nombre": "Budin de pan", "descripcion": "Bread pudding", "precio": 5500 },
+    { "id": 3, "nombre": "Chocotorta", "descripcion": "Chocotorta", "precio": 8900 },
+    { "id": 4, "nombre": "Porcion de torta", "descripcion": "Portion of cake", "precio": 8900 },
+    { "id": 5, "nombre": "Recargo de dulce de leche o crema", "descripcion": "Refill of dulce de leche or cream", "precio": 2500 }
+  ]
+}

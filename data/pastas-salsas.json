@@ -1,0 +1,32 @@
+{
+  "categoria": "Pastas y Salsas",
+  "label": "Pastas",
+  "subcategorias": [
+    {
+      "nombre": "Pastas",
+      "nombre_ingles": "Noodles",
+      "items": [
+        { "id": 1, "nombre": "Tallarines", "descripcion": "Spaguetti noodles", "precio": 7600 },
+        { "id": 2, "nombre": "Ravioles", "descripcion": "Ravioles", "precio": 8900 },
+        { "id": 3, "nombre": "Ñoquis", "descripcion": "Italian dumplings", "precio": 8600 },
+        { "id": 4, "nombre": "Sorrentinos", "descripcion": "Sorrentinos", "precio": 9100 },
+        { "id": 5, "nombre": "Lasaña", "descripcion": "Lasagna", "precio": 12000 }
+      ]
+    },
+    {
+      "nombre": "Salsas",
+      "nombre_ingles": "Sauces",
+      "items": [
+        { "id": 6, "nombre": "Fileto", "descripcion": "Red sauce w o meat", "precio": 4600 },
+        { "id": 7, "nombre": "A la crema", "descripcion": "Alfredo sauce", "precio": 4600 },
+        { "id": 8, "nombre": "Boloñesa", "descripcion": "Meat sauce", "precio": 6300 },
+        { "id": 9, "nombre": "Estofado", "descripcion": "Beef stew sauce", "precio": 6800 },
+        { "id": 10, "nombre": "Scarparo", "descripcion": "Tomato, cream, bacon sauce", "precio": 8400 },
+        { "id": 11, "nombre": "Parisienne", "descripcion": "White, gravy sauce", "precio": 8900 },
+        { "id": 12, "nombre": "Pesto", "descripcion": "Traditional pesto sauce", "precio": 6300 },
+        { "id": 13, "nombre": "Rosa o mixta", "descripcion": "Mix of red & white pasta sauce", "precio": 5800 },
+        { "id": 14, "nombre": "Cuatro quesos", "descripcion": "Four cheese sauce", "precio": 9200 }
+      ]
+    }
+  ]
+}

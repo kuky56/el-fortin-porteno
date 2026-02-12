@@ -1,0 +1,18 @@
+{
+  "categoria": "Minutas",
+  "label": "Minutas",
+  "nombre_ingles": "Staples",
+  "items": [
+    { "id": 1, "nombre": "Bife de costilla", "descripcion": "Ribeye steak", "precio": 18200 },
+    { "id": 2, "nombre": "Milanesa", "descripcion": "Breaded veal", "precio": 15200 },
+    { "id": 3, "nombre": "Suprema", "descripcion": "Breaded chicken", "precio": 15200 },
+    { "id": 4, "nombre": "Pollo grille", "descripcion": "Chicken grill", "precio": 15800 },
+    { "id": 5, "nombre": "Tortilla de verdura", "descripcion": "Vegi egg pie", "precio": 12100 },
+    { "id": 6, "nombre": "Tortilla de papa", "descripcion": "Potato pie", "precio": 12100 },
+    { "id": 7, "nombre": "Tortilla fugazzetta", "descripcion": "Potato, egg, cheese, onion pie", "precio": 14300 },
+    { "id": 8, "nombre": "Tortilla española", "descripcion": "Potato, egg, cheese, chorizo pie", "precio": 17700 },
+    { "id": 9, "nombre": "Omelette de jyq", "descripcion": "Ham & cheese omelette", "precio": 12900 },
+    { "id": 10, "nombre": "Revuelto gramajo", "descripcion": "Hashed ham & egg", "precio": 14600 },
+    { "id": 11, "nombre": "Filet de merluza a la romana", "descripcion": "Fried fish", "precio": 16100 }
+  ]
+}

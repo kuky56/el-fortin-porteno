@@ -1,0 +1,268 @@
+/* --- FUNDAMENTALES --- */
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.modal-overlay-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(8px);
+  z-index: 100000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay-bg.show {
+  opacity: 1;
+  display: flex;
+}
+
+/* CAJA PC */
+.modal-page-box {
+  width: 90%;
+  max-width: 850px;
+  background: #fdf5e6;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.modal-overlay-bg.show .modal-page-box {
+  transform: translateY(0);
+}
+
+/* --- HEADER (Contenedor relativo) --- */
+.modal-header-compact {
+  background: #800000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-start;
+  /* Alinea logo y títulos a la izquierda */
+  align-items: center;
+  border-bottom: 3px solid #d4af37;
+  position: relative;
+  /* Clave para que el botón se posicione respecto a esto */
+  min-height: 80px;
+}
+
+/* --- BOTÓN SALIR (A la puntita) --- */
+.btn-cerrar-giro {
+  position: absolute;
+  /* Se despega del flujo normal */
+  top: 35px;
+  /* Distancia desde arriba */
+  right: 10px;
+  /* Distancia desde la derecha */
+  background: none;
+  border: 1.5px solid #d4af37;
+  color: #d4af37;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  z-index: 10;
+  /* Para que siempre esté por encima */
+}
+
+.btn-cerrar-giro:hover {
+  transform: rotate(180deg);
+  background: #d4af37;
+  color: #800000;
+}
+
+/* Ajuste para móvil: que no se encime con el título */
+@media (max-width: 650px) {
+  .btn-cerrar-giro {
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+  }
+}
+.logo-bundle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-bundle img {
+  margin-top: 10px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #800000;
+  object-fit: cover;
+}
+
+.titulo-damion {
+  font-family: 'Damion', cursive;
+  color: #d4af37;
+  font-size: 50px;
+  margin-top: 10px;
+
+  line-height: 1;
+}
+
+.subtitulo-lato {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+
+/* CUERPO FORMULARIO */
+.modal-body-compact {
+  padding: 30px 40px;
+}
+
+.form-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8px);
+}
+
+.field.full {
+  width: 100%;
+}
+
+.field label {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #800000;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 40px;
+  background: #fff;
+  box-sizing: border-box;
+  outline: none;
+}
+
+textarea {
+  height: 80px !important;
+  resize: none;
+}
+
+/* BOTONES PC */
+.btn-group-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-envio-outline {
+  width: 190px;
+  padding: 14px;
+  background: transparent;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-wa {
+  border: 2px solid #25d366;
+  color: #25d366;
+}
+
+.btn-wa:hover {
+  background: #25d366 !important;
+  color: #fff !important;
+}
+
+.btn-mail {
+  border: 2px solid #4a4a4a;
+  color: #4a4a4a;
+}
+
+.btn-mail:hover {
+  background: #d4af37 !important;
+  border-color: #d4af37 !important;
+  color: #800000 !important;
+}
+
+/* 📱 TABLET Y MÓVIL (PANTALLA COMPLETA + TEXTOS GRANDES) */
+@media (max-width: 992px) {
+  .modal-page-box {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100vh !important;
+    border-radius: 0 !important;
+  }
+
+  .modal-body-compact {
+    padding: 30px 20px;
+    overflow-y: auto;
+  }
+
+  .field {
+    width: 100% !important;
+  }
+
+  /* Agranda casillas y textos para dedos grandes */
+  .field input,
+  .field select,
+  .field textarea {
+    height: 55px !important;
+    /* Más altura */
+    font-size: 18px !important;
+    /* Texto más grande */
+  }
+
+  .btn-group-center {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn-envio-outline {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: 60px !important;
+    /* Más altura en botones */
+    font-size: 16px !important;
+    /* Texto de botón más grande */
+  }
+
+  .titulo-damion {
+    font-size: 30px;
+  }
+}

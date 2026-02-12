@@ -1,0 +1,29 @@
+{
+  "categoria": "Carnes",
+  "label": "Carnes",
+  "subcategorias": [
+    {
+      "nombre": "Carne Roja",
+      "nombre_ingles": "Red Meat",
+      "items": [
+        { "id": 1, "nombre": "Escalopes", "descripcion": "Breaded veal cutlet", "precio": 19900 },
+        { "id": 2, "nombre": "Bife de chorizo", "descripcion": "New york strip steak", "precio": 30100 },
+        { "id": 3, "nombre": "Matambrito a la fugazzetta", "descripcion": "Steak, onions, mozzarella", "precio": 19900 },
+        { "id": 4, "nombre": "Matambrito a la pizza", "descripcion": "Steak, pizza sauce, mozzarella", "precio": 21900 },
+        { "id": 5, "nombre": "Costillitas de cerdo a la riojana", "descripcion": "Pork ribs", "precio": 22300 },
+        { "id": 6, "nombre": "Bondiola a la mostaza", "descripcion": "Pork tenderloin - mustard sauce", "precio": 22300 }
+      ]
+    },
+    {
+      "nombre": "Carne Blanca",
+      "nombre_ingles": "White Meat",
+      "items": [
+        { "id": 7, "nombre": "Suprema rellena", "descripcion": "Breaded chicken cutlet stuffed w ham & cheese", "precio": 24300 },
+        { "id": 8, "nombre": "Pollo al ajillo", "descripcion": "Garlic chicken", "precio": 19900 },
+        { "id": 9, "nombre": "Pollo al champiñon", "descripcion": "Chicken w mushroom sauce", "precio": 22200 },
+        { "id": 10, "nombre": "Dados de pollo a la mostaza", "descripcion": "Chicken fingers w mustard", "precio": 20600 },
+        { "id": 11, "nombre": "Pollo al verdeo", "descripcion": "Verdeo chicken", "precio": 20600 }
+      ]
+    }
+  ]
+}

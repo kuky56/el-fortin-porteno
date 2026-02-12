@@ -1,0 +1,9 @@
+{
+  "categoria": "Parrilla",
+  "label": "Parrilla",
+  "nombre_ingles": "Grill/BBQ",
+  "items": [
+    { "id": 1, "nombre": "Parrillada para 2 personas", "descripcion": "Mixed grill bbq for 2", "precio": 65200 },
+    { "id": 2, "nombre": "Parrillada para 4 personas", "descripcion": "Mixed grill bbq for 4", "precio": 98700 }
+  ]
+}

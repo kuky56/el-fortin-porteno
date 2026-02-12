@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu Mesa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .form-container {
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+            font-family: inherit;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+        }
+        
+        button {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-email {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-email:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #1fb855;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍽️ Reserva tu Mesa</h1>
+            <p>Completa el formulario y te confirmaremos tu reserva</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="reservaForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo <span class="required">*</span></label>
+                    <input type="text" id="nombre" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono <span class="required">*</span></label>
+                        <input type="tel" id="telefono" placeholder="Ej: 1234567890" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="tu@email.com">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha <span class="required">*</span></label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hora">Hora <span class="required">*</span></label>
+                        <input type="time" id="hora" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="personas">Número de personas <span class="required">*</span></label>
+                    <select id="personas" required>
+                        <option value="">Selecciona...</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                        <option value="7">7 personas</option>
+                        <option value="8">8 personas</option>
+                        <option value="mas">Más de 8 personas</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comentarios">Comentarios adicionales</label>
+                    <textarea id="comentarios" placeholder="Alergias, ocasión especial, preferencias de mesa, etc."></textarea>
+                </div>
+                
+                <div class="btn-container">
+                    <button type="submit" class="btn-email">📧 Enviar por Email</button>
+                    <button type="button" class="btn-whatsapp" onclick="enviarWhatsApp()">💬 Enviar por WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Establecer fecha mínima como hoy
+        const hoy = new Date().toISOString().split('T')[0];
+        document.getElementById('fecha').setAttribute('min', hoy);
+        
+        // Función para enviar por email
+        document.getElementById('reservaForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const email = document.getElementById('email').value;
+            const fecha = document.getElementById('fecha').value;
+            const hora = document.getElementById('hora').value;
+            const personas = document.getElementById('personas').value;
+            const comentarios = document.getElementById('comentarios').value;
+            
+            // Formato de fecha legible
+            const fechaLegible = new Date(fecha + 'T00:00:00').toLocaleDateString('es-ES', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            const asunto = `Nueva Reserva - ${nombre} - ${fechaLegible}`;
+            const cuerpo = `
+NUEVA RESERVA DE MESA
+
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Email: ${email}
+Fecha: ${fechaLegible}
+Hora: ${hora}
+Número de personas: ${personas}
+Comentarios: ${comentarios || 'Ninguno'}
+
+---
+Por favor confirmar disponibilidad.
+            `;
+            
+            // CAMBIA ESTE EMAIL POR EL DEL RESTAURANTE
+            const emailRestaurante = 'elfortinporteno@gmail.com';
+            
+            window.location.href = `mailto:${emailRestaurante}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        });
+        
+        // Función para enviar por WhatsApp
+        function enviarWhatsApp() {
+            const form = document.getElementById('reservaForm');
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const fecha = document.getElementById('fecha').value;
+            const hora = document.getElementById('hora').value;
+            const personas = document.getElementById('personas').value;
+            const comentarios = document.getElementById('comentarios').value;
+            
+            const fechaLegible = new Date(fecha + 'T00:00:00').toLocaleDateString('es-ES', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            const mensaje = `
+¡Hola! Quisiera hacer una reserva:
+
+👤 Nombre: ${nombre}
+📱 Teléfono: ${telefono}
+📅 Fecha: ${fechaLegible}
+🕐 Hora: ${hora}
+👥 Personas: ${personas}
+💬 Comentarios: ${comentarios || 'Ninguno'}
+
+¿Hay disponibilidad? Gracias!
+            `.trim();
+            
+            // CAMBIA ESTE NÚMERO POR EL DEL RESTAURANTE (con código de país, sin +)
+            const numeroWhatsApp = '5491170360708'; // Ejemplo: Argentina
+            
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
+</body>
+</html>
