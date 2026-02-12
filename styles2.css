@@ -389,6 +389,66 @@ cite {
   bottom: 20px;
   left: 150px;
 }
+/* para icono de plato */
+.cta-button {
+  display: inline-flex;
+  /* Alinea emoji y texto en una fila */
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  gap: 10px;
+  /* Espacio fijo entre emoji y texto */
+  padding: 12px 25px;
+  background-color: #f3a953;
+  /* Tu color naranja */
+  color: #000;
+  /* Color de texto */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  /* El borde blanco que se ve en tu foto */
+  white-space: nowrap;
+  /* ¡CLAVE! Evita que se rompa en dos líneas */
+  transition: transform 0.2s;
+}
+
+/* Estilo para el emoji */
+.emoji-icon {
+  font-size: 2rem;
+  /* Tamaño del emoji */
+  line-height: 1;
+  /* Evita que el emoji deforme el alto del botón */
+}
+
+/* Estilo para el texto */
+.button-text {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* Ajuste específico para celulares muy chicos */
+@media (max-width: 400px) {
+  .cta-button {
+    padding: 10px 15px;
+    gap: 6px;
+  }
+
+  .button-text {
+    font-size: 0.9rem;
+    /* Achica un pelín la letra si no entra */
+  }
+}
+
+
+/* -------------------------------------------------- */
+
+
+
+
+
+
 
 /* Ajuste para que se vea bien en móviles */
 @media (max-width: 768px) {

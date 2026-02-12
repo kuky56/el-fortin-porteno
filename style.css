@@ -17,7 +17,7 @@ body {
   --color-blanco: #fff;
   --btn-primario: #F3A64B;
   --btn-text: #99211C;
-  --btn-hover:#f7f7f7;
+  --btn-hover: #f7f7f7;
 }
 
 /* HEADER (Fondo Textura PNG) */
@@ -83,6 +83,7 @@ body {
   font-weight: 400;
   margin: 0;
 }
+
 .linea {
   height: 1px;
   width: 80px;
@@ -226,7 +227,8 @@ body {
   transform: translateX(-50%);
   padding: 20px 20px;
   padding: 20px 20px;
-/*   background: rgba(0, 0, 0, 0.25); */background: rgba(32, 17, 1, 0.606);
+  /*   background: rgba(0, 0, 0, 0.25); */
+  background: rgba(32, 17, 1, 0.606);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 12px;
@@ -325,7 +327,8 @@ body {
 /* CONTENEDOR GENERAL */
 
 .seguiremos {
-  max-width: 950px;/* era 900 */
+  max-width: 950px;
+  /* era 900 */
   margin: 0 auto;
   padding: 20px 20px;
   text-align: center;
@@ -343,13 +346,13 @@ body {
   gap: 30px;
   /* separación base desktop */
   font-size: 2rem;
-font-family: "Cabin", sans-serif;
+  font-family: "Cabin", sans-serif;
   color: #8b0000;
 }
 
-.seguiremos h3{
+.seguiremos h3 {
   font-size: 1.2em;
-    font-family: "Cabin", sans-serif;
+  font-family: "Cabin", sans-serif;
   color: #3b2a1a;
 
 }
@@ -362,12 +365,14 @@ font-family: "Cabin", sans-serif;
   height: auto;
   opacity: 0.9;
 }
+
 .faq-titulo img {
   width: 120px;
 
   height: auto;
   opacity: 0.9;
 }
+
 /* Ajustes finos */
 .svg-izq {
   margin-right: -10px;
@@ -377,6 +382,7 @@ font-family: "Cabin", sans-serif;
   margin-left: -10px;
   transform: scaleX(-1);
 }
+
 .svg-izq2 {
   margin-right: 14px;
 }
@@ -497,11 +503,11 @@ font-family: "Cabin", sans-serif;
   width: 230px;
   height: auto;
   text-decoration: none;
- /*  background: var(--btn-primario); */
+  /*  background: var(--btn-primario); */
   padding: 10px 0px;
   color: var(--btn-text);
   font-weight: 700;
-  font-size: 1em; 
+  font-size: 1em;
   border-radius: 8px;
   cursor: pointer;
   border: 2px solid #F3A64B;
@@ -632,6 +638,7 @@ font-family: "Cabin", sans-serif;
   flex-direction: column;
   text-align: center;
 }
+
 /* lo saque porque esta abajo */
 /* .card-info {
   padding: 15px;
@@ -653,14 +660,15 @@ font-family: "Cabin", sans-serif;
   letter-spacing: 0.01em;
   font-size: 1rem !important;
   color: #3b2a1a;
-  margin: 25px 0 25px 0 !important;/* El párrafo debe tener su propio margen para no apretar el botón */
-flex-grow: 1;
+  margin: 25px 0 25px 0 !important;
+  /* El párrafo debe tener su propio margen para no apretar el botón */
+  flex-grow: 1;
 
 
 }
-  
-   
- 
+
+
+
 
 /* Asegurar que el CTA (botón/tag) quede siempre al fondo de la tarjeta */
 /* Aplicamos flex column al contenedor y empujamos el botón con margin-top: auto */
@@ -774,18 +782,20 @@ flex-grow: 1;
   line-height: 1.4;
 }
 
- .footer-mapa iframe {
+.footer-mapa iframe {
   width: 100%;
+  max-width: 900px;
+  /* igual que las tarjetas */
   height: 200px;
-  
- 
-border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
   /* Bordes redondeados para que no se vea tan rígido */
   border: 2px solid #b30000;
   /* Un borde rojo sutil como el logo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* Sombra para darle profundidad */
-} 
+}
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, .2);
@@ -823,7 +833,83 @@ border-radius: 12px;
 }
 
 .whatsapp-float i {
-  font-size: 2.5rem
+  font-size: 1.9rem;
+}
+
+/* Mantener tamaño del icono flotante (WhatsApp) sin que quede demasiado grande */
+/* Reglas específicas al final para evitar que las reglas globales de .bi lo alteren */
+.whatsapp-float i,
+.whatsapp-float .bi {
+  font-size: 1.9rem !important;
+}
+
+/* Asegurar que el icono dentro del botón flotante sea blanco, no bordo */
+.whatsapp-float i,
+.whatsapp-float .bi {
+  color: var(--color-blanco) !important;
+}
+
+@media (max-width: 768px) {
+
+  .whatsapp-float i,
+  .whatsapp-float .bi {
+    font-size: 1.7rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .whatsapp-float i,
+  .whatsapp-float .bi {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ========================= */
+/* Global Bootstrap Icons styles */
+/* ========================= */
+/* Base styling for all bootstrap icons in the site */
+.bi {
+  vertical-align: middle;
+  line-height: 1;
+  display: inline-block;
+  color: #8b0000;
+  /* default brand color */
+  font-size: 1.05rem;
+}
+
+/* Contact-specific icons (cards, intro, lists) */
+.contacto-bodegon .bi,
+.datos-contacto .bi,
+.intro-contacto .bi,
+.intro-sucursales .bi {
+  color: #8b0000;
+  font-size: 1.15rem;
+  margin-right: 8px;
+}
+
+/* Hero phone inside .btn-telefono */
+.hero .btn-telefono i {
+  margin-right: 10px;
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+/* Footer icons use lighter color to contrast on dark background */
+.footer .bi {
+  color: #f3e9dc;
+  font-size: 1.05rem;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .bi {
+    font-size: 1rem;
+  }
+
+  .hero .btn-telefono i {
+    font-size: 1.1rem;
+  }
 }
 
 /* banderita Argentina MÁS ANGOSTA con FRANJAS MÁS ANGOSTAS */
@@ -864,6 +950,7 @@ border-radius: 12px;
   font-family: 'Cabin', sans-serif;
   letter-spacing: 1px;
 }
+
 /* ------------------------------tarjetas-------------------------------------------------- */
 /* === GUARDAS ESTILO BODEGÓN PARA CARDS === */
 
@@ -919,6 +1006,50 @@ border-radius: 12px;
   text-align: center;
 }
 
+/* ========================= */
+/* Reusable Bodegón card style */
+/* Use añadiendo la clase `bodegon-card` al contenedor HTML */
+.bodegon-card {
+  background: #fdfaf5;
+  /* borde interior: más claro (dorado suave) */
+  border: 2px solid #e8caa0;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  padding: 14px;
+  padding-top: 22px;
+  overflow: hidden;
+  position: relative;
+  /* Outline exterior: más claro para efecto doble borde */
+  outline: 2px solid #f3c77a;
+  outline-offset: 6px;
+}
+
+/* Variante con guarda/acento a la izquierda (si se desea) */
+.bodegon-card.accent-left {
+  border-left: 5px double #F3A64B;
+}
+
+/* Pequeñas reglas para integración segura con los selectores existentes */
+.bodegon-card .tag,
+.bodegon-card .btn-telefono,
+.bodegon-card .btn-menu {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* Guarda decorativa (esquina superior izquierda) */
+.bodegon-card::before {
+  content: "❧";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #8b0000;
+  font-size: 1.05rem;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
 /* Guarda Superior (Esquina) */
 .card-info::before {
   content: "❧";
@@ -933,7 +1064,7 @@ border-radius: 12px;
 /* Título más chico para que no rompa en 3 columnas */
 .card-info h3 {
   color: #8b0000;
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   margin: 0;
   padding-top: 5px;
 }
@@ -994,6 +1125,7 @@ border-radius: 12px;
 .card-servicio {
   border-left: 5px double #F3A64B;
 }
+
 /* --- Ajuste para sección de 2 tarjetas (Promos/Servicios) --- */
 
 .fila-de-dos {
@@ -1017,201 +1149,203 @@ border-radius: 12px;
   border-bottom: 1px dashed #d4a373;
   padding-bottom: 8px;
 }
-    /* SECCIÓN FAQ */
-    .faq-section {
-      max-width: 900px;
-      margin: 60px auto;
-     /*  background: white; */
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-  
-    .faq-titulo {
-      font-family: "Cabin", sans-serif;
-      text-align: center;
-      font-size: 2rem;
-      color: #8b0000;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-  
-    .faq-subtitulo {
-      font-family: "Lato", sans-serif;
-      font-size: 1.2rem;
-      color: #8b0000;
-      text-align: center;
-     
-    
-      margin-bottom: 40px;
-      font-weight: 600;
-    }
-  
-    /* ACCORDION */
-    .faq-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .faq-item {
-      border: 2px solid #e0e0e0;
-      border-radius: 6px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-  
-    .faq-item:hover {
-      border-color: #f3a64b;
-      box-shadow: 0 4px 12px rgba(243, 166, 75, 0.15);
-    }
-  
-    /* INPUT HIDDEN PARA ACCORDION */
-    .faq-item input {
-      display: none;
-    }
-  
-    /* LABEL (PREGUNTA) */
-    .faq-pregunta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-      background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
-      cursor: pointer;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #1a1a1a;
-      user-select: none;
-      transition: background 0.3s ease;
-    }
-  
-    .faq-pregunta:hover {
-      background: linear-gradient(135deg, #f9f9f9 0%, #f3f3f3 100%);
-    }
-  
-    .faq-pregunta::after {
-      content: '▼';
-      font-size: 0.8rem;
-      color: #f3a64b;
-      transition: transform 0.3s ease;
-      display: inline-block;
-      margin-left: 15px;
-      flex-shrink: 0;
-    }
-  
-    /* CUANDO ESTÁ ACTIVO */
-    .faq-item input:checked+.faq-pregunta {
-      background: linear-gradient(135deg, #f3a64b 0%, #e89b3c 100%);
-      color: white;
-    }
-  
-    .faq-item input:checked+.faq-pregunta::after {
-      transform: rotate(180deg);
-      color: white;
-    }
-  
-    /* RESPUESTA (HIDDEN POR DEFECTO) */
-    .faq-respuesta {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      background-color: #fafafa;
-      border-top: 2px solid #e0e0e0;
-    }
-  
-    /* CUANDO ESTÁ ACTIVO */
-    .faq-item input:checked~.faq-respuesta {
-      max-height: 500px;
-      border-top-color: #f3a64b;
-    }
-  
-    .faq-respuesta-contenido {
-      padding: 20px;
-      color: #555;
-      line-height: 1.7;
-      font-size: 1rem;
-    }
-  
-    .faq-respuesta-contenido a {
-      color: #f3a64b;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-  
-    .faq-respuesta-contenido a:hover {
-      color: #e89b3c;
-      text-decoration: underline;
-    }
- 
- 
- 
-    /*  seccion pedidos por encargos */
-     .pedidos-encargo {
-       padding: 20px;
-       background-color: #fdf5e6;
-       /* El mismo fondo crema que tu modal */
-       border-radius: 10px;
-     }
-  
-     .categoria-pedido h3 {
-       font-family: 'Damion', cursive;
-       color: #800000;
-       /* Bordó */
-       font-size: 28px;
-       border-bottom: 2px solid #d4af37;
-       /* Dorado */
-       margin-bottom: 15px;
-       padding-bottom: 5px;
-     }
-  
-     .lista-productos {
-       list-style: none;
-       padding: 0;
-       margin-bottom: 30px;
-     }
-  
-     .lista-productos li {
-       margin-bottom: 15px;
-       line-height: 1.4;
-     }
-  
-     .lista-productos strong {
-       display: block;
-       color: #800000;
-       font-size: 18px;
-       font-family: 'Lato', sans-serif;
-     }
-  
-     .lista-productos span {
-       color: #4a4a4a;
-       font-size: 16px;
-     }
-  
-     .lista-productos small {
-       color: #800000;
-       font-weight: bold;
-     }
-    /* Estilo para la etiqueta de destacado */
-    .recomendado-tag {
-      display: inline-block;
-      background-color: #d4af37;
-      /* Dorado */
-      color: #800000;
-      /* Bordó */
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      font-size: 10px;
-      text-transform: uppercase;
-      padding: 3px 8px;
-      border-radius: 12px;
-      margin-bottom: 5px;
-      letter-spacing: 1px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-  
-    
+
+/* SECCIÓN FAQ */
+.faq-section {
+  max-width: 900px;
+  margin: 60px auto;
+  /*  background: white; */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-titulo {
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #8b0000;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.faq-subtitulo {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  color: #8b0000;
+  text-align: center;
+
+
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* ACCORDION */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #f3a64b;
+  box-shadow: 0 4px 12px rgba(243, 166, 75, 0.15);
+}
+
+/* INPUT HIDDEN PARA ACCORDION */
+.faq-item input {
+  display: none;
+}
+
+/* LABEL (PREGUNTA) */
+.faq-pregunta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.faq-pregunta:hover {
+  background: linear-gradient(135deg, #f9f9f9 0%, #f3f3f3 100%);
+}
+
+.faq-pregunta::after {
+  content: '▼';
+  font-size: 0.8rem;
+  color: #f3a64b;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left: 15px;
+  flex-shrink: 0;
+}
+
+/* CUANDO ESTÁ ACTIVO */
+.faq-item input:checked+.faq-pregunta {
+  background: linear-gradient(135deg, #f3a64b 0%, #e89b3c 100%);
+  color: white;
+}
+
+.faq-item input:checked+.faq-pregunta::after {
+  transform: rotate(180deg);
+  color: white;
+}
+
+/* RESPUESTA (HIDDEN POR DEFECTO) */
+.faq-respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #fafafa;
+  border-top: 2px solid #e0e0e0;
+}
+
+/* CUANDO ESTÁ ACTIVO */
+.faq-item input:checked~.faq-respuesta {
+  max-height: 500px;
+  border-top-color: #f3a64b;
+}
+
+.faq-respuesta-contenido {
+  padding: 20px;
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.faq-respuesta-contenido a {
+  color: #f3a64b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.faq-respuesta-contenido a:hover {
+  color: #e89b3c;
+  text-decoration: underline;
+}
+
+
+
+/*  seccion pedidos por encargos */
+.pedidos-encargo {
+  padding: 20px;
+  background-color: #fdf5e6;
+  /* El mismo fondo crema que tu modal */
+  border-radius: 10px;
+}
+
+.categoria-pedido h3 {
+  font-family: 'Damion', cursive;
+  color: #800000;
+  /* Bordó */
+  font-size: 28px;
+  border-bottom: 2px solid #d4af37;
+  /* Dorado */
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.lista-productos {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.lista-productos li {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.lista-productos strong {
+  display: block;
+  color: #800000;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+.lista-productos span {
+  color: #4a4a4a;
+  font-size: 16px;
+}
+
+.lista-productos small {
+  color: #800000;
+  font-weight: bold;
+}
+
+/* Estilo para la etiqueta de destacado */
+.recomendado-tag {
+  display: inline-block;
+  background-color: #d4af37;
+  /* Dorado */
+  color: #800000;
+  /* Bordó */
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 /* ------------------------------------------------- */
 
 
@@ -1231,6 +1365,7 @@ border-radius: 12px;
     /* 2 por fila en tablets */
   }
 }
+
 /* IMPORTANTE: En celulares volvemos a 1 columna para que no se rompa */
 @media (max-width: 850px) {
   .fila-de-dos {
@@ -1242,6 +1377,7 @@ border-radius: 12px;
     padding: 15px !important;
   }
 }
+
 @media (max-width: 500px) {
   .cards-especialidades {
     grid-template-columns: 1fr;
@@ -1431,8 +1567,9 @@ border-radius: 12px;
     /* background: linear-gradient(to bottom,
         rgba(7, 7, 7, 0.506),
         rgba(0, 0, 0, 0.355)); */
-   /*  backdrop-filter: blur(6px); */background: rgba(32, 17, 1, 0.606);
- /*    -webkit-backdrop-filter: blur(6px); */
+    /*  backdrop-filter: blur(6px); */
+    background: rgba(32, 17, 1, 0.606);
+    /*    -webkit-backdrop-filter: blur(6px); */
     bottom: auto;
     top: 70%;
     /* centrar verticalmente en móvil */
@@ -1459,32 +1596,37 @@ border-radius: 12px;
     padding: 10px 18px;
   }
 
-  .main-header {min-height: 230px;
+  .main-header {
+    min-height: 230px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
   }
 
-   .navbar {
+  .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-  } 
-
-  .titulo-principal {font-size: 3rem;
-  /*   font-size: 2.6rem; */
   }
 
-  
-  .subtitulo {font-size: 1rem;
+  .titulo-principal {
+    font-size: 3rem;
+    /*   font-size: 2.6rem; */
+  }
+
+
+  .subtitulo {
+    font-size: 1rem;
     /* font-size: 0.9rem; */
   }
- .subtitulo-wrapper {
-   gap: 15px;
- }
+
+  .subtitulo-wrapper {
+    gap: 15px;
+  }
+
   /* body {
     padding-top: 150px;
   } */
@@ -1503,12 +1645,15 @@ border-radius: 12px;
     display: none;
     width: 60px;
   }
-.faq-titulo img {display: none;
-  width: 120px;
 
-  height: auto;
-  opacity: 0.9;
-}
+  .faq-titulo img {
+    display: none;
+    width: 120px;
+
+    height: auto;
+    opacity: 0.9;
+  }
+
   .svg-izq {
     margin-right: 0px;
   }
@@ -1521,37 +1666,37 @@ border-radius: 12px;
     grid-template-columns: 2fr;
     gap: 20px;
   } */
-        .faq-section {
-          padding: 25px;
-          margin: 40px auto;
-        }
-    
-        .faq-titulo {
-          font-size: 1.8rem;
-        }
-    
-        .faq-subtitulo {
-          font-size: 0.95rem;
-        }
-    
-        .faq-pregunta {
-          padding: 16px;
-          font-size: 1rem;
-        }
-    
-        .faq-respuesta-contenido {
-          padding: 16px;
-          font-size: 0.95rem;
-        }
+  .faq-section {
+    padding: 25px;
+    margin: 40px auto;
+  }
+
+  .faq-titulo {
+    font-size: 1.8rem;
+  }
+
+  .faq-subtitulo {
+    font-size: 0.95rem;
+  }
+
+  .faq-pregunta {
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  .faq-respuesta-contenido {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
 
 
 
-.tag{
+  .tag {
     font-size: 1.3em;
     width: 100%;
-      max-width: 320px;
-      text-align: center;
-}
+    max-width: 320px;
+    text-align: center;
+  }
 
 
 }
@@ -1571,8 +1716,8 @@ border-radius: 12px;
   }
 
   .logo {
-    width: 
-    200px;
+    width:
+      200px;
   }
 
   .subtitulo-wrapper {
@@ -1582,37 +1727,32 @@ border-radius: 12px;
   .header-content {
     padding: 0px 15px 0px 15px;
   }
-            .faq-section {
-              padding: 15px;
-              margin: 20px auto;
-            }
-      
-            .faq-titulo {
-              font-size: 1.5rem;
-            }
-      
-            .faq-subtitulo {
-              font-size: 0.9rem;
-            }
-      
-            .faq-pregunta {
-              padding: 14px;
-              font-size: 0.95rem;
-            }
-      
-            .faq-pregunta::after {
-              font-size: 0.7rem;
-            }
-      
-            .faq-respuesta-contenido {
-              padding: 14px;
-              font-size: 0.9rem;
-            }
 
+  .faq-section {
+    padding: 15px;
+    margin: 20px auto;
+  }
 
+  .faq-titulo {
+    font-size: 1.5rem;
+  }
 
+  .faq-subtitulo {
+    font-size: 0.9rem;
+  }
 
+  .faq-pregunta {
+    padding: 14px;
+    font-size: 0.95rem;
+  }
 
+  .faq-pregunta::after {
+    font-size: 0.7rem;
+  }
+
+  .faq-respuesta-contenido {
+    padding: 14px;
+    font-size: 0.9rem;
+  }
 
 }
-

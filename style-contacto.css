@@ -13,42 +13,144 @@
   text-align: center;
   font-size: 2em;
   color: #8b0000;
-  margin-bottom: 80px;
+  margin-bottom: 36px;
   letter-spacing: 1px;
 }
 
 .intro-contacto {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 50px;
-  font-size: 18px;
-  color: #333;
+  text-align: left;
+  max-width: 950px;
+  margin: 8px auto 20px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #3b2a1a;
+  font-family: "Lato", Georgia, serif;
+}
+
+
+
+
+.intro-contacto ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.intro-contacto li {
+  margin-bottom: 8px;
+}
+
+.intro-contacto strong {
+  color: #8b0000;
+}
+
+/* Asegura que la tipografía de 'Nuestros medios de Comunicación' coincida con la sección superior */
+.contacto-bodegon .intro-contacto,
+.contacto-bodegon .intro-contacto p,
+.contacto-bodegon .intro-contacto ul,
+.contacto-bodegon .intro-contacto li {
+  font-family: "Lato", Georgia, serif;
+  color: #3b2a1a;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.contacto-bodegon .intro-contacto ul {
+  margin-top: 0.5rem;
+}
+
+/* Intro específico para la sección 'Nuestras Sucursales' */
+.intro-sucursales {
+  max-width: 950px;
+  margin: 8px auto 18px;
+  font-family: "Lato", Georgia, serif;
+  color: #3b2a1a;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .datos-contacto {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  /* Usamos grid para que las "tarjetas" tengan anchos iguales y sean responsive */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 26px; /* aumentado para evitar solapamiento del outline doble */
   margin-bottom: 60px;
-  flex-wrap: wrap;
+  align-items: stretch;
+  max-width: 900px;
+  /* reducir ancho total para tarjetas más estrechas */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.dato {font-family: 'Lato', cursive;
+/* Si usamos la clase .bodegon-card dentro de la rejilla, la separación
+   necesaria para el outline se controla reduciendo su offset localmente */
+.datos-contacto .bodegon-card {
+  outline-offset: 4px; /* menos espacio requerido dentro de la rejilla */
+}
+
+.dato {
+  font-family: 'Lato', cursive;
   text-align: center;
-  font-size: 1.5em;
-  
+  font-size: 1.12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 160px;
+  /* altura mayor para consistencia */
+  background: #fffaf5;
+  /* tono crema muy suave para integrarse */
+  border: 1.5px solid #8b0000;
+  border-radius: 10px;
+  padding: 14px 0;
+  /* quitar padding lateral */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 220ms cubic-bezier(.2, .8, .2, 1), box-shadow 220ms ease, border-color 220ms ease, background-color 220ms ease;
 }
 
-.dato a {border: 1.5px solid #8b0000;padding: 30px 10px 10px 10px;
-  border-radius: 8px;
+.dato span,
+.dato i {
+  display: block;
+  font-size: 2.6rem;
+  /* iconos más grandes */
+  color: #8b0000;
+  margin: 8px 0 12px 0;
+  text-align: center;
+  transition: transform 200ms ease, color 200ms ease;
+}
+
+.dato a {
+  display: inline-block;
   color: #8b0000;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
+  padding: 8px 0;
+  /* quitar padding lateral del enlace */
 }
 
 .dato a:hover {
   color: #b22222;
 }
+
+/* Hover sencillo: eleva la tarjeta, aumenta sombra y cambia color del icono */
+.dato:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+  border-color: #b22222;
+  background-color: #ffffff;
+}
+
+.dato:hover span,
+.dato:hover i {
+  color: #b22222;
+  transform: scale(1.05);
+}
+
+
 
 /* SUCURSALES */
 
@@ -57,6 +159,10 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
   margin-bottom: 70px;
+  max-width: 900px;
+  /* igual que .datos-contacto */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sucursal-card {
@@ -67,7 +173,9 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.sucursal-card h3 {font-family: 'Cabin', cursive;font-size: 1.5em;
+.sucursal-card h3 {
+  font-family: 'Cabin', cursive;
+  font-size: 1.5em;
   text-align: center;
   color: #8b0000;
   margin-bottom: 15px;
@@ -95,7 +203,8 @@
   margin-bottom: 10px;
   font-size: 26px;
 }
-.newsletter-bodegon p{
+
+.newsletter-bodegon p {
   font-family: 'Lato', cursive;
   margin-bottom: 10px;
 }
@@ -128,8 +237,7 @@
 
 
 /* SVG */
-.titulo-seccion img
- {
+.titulo-seccion img {
   width: 120px;
 
   height: auto;
@@ -148,8 +256,20 @@
   transform: scaleX(-1);
 }
 
+.datos-contacto .dato span,
+.datos-contacto .dato i {
+  display: block;
+  font-size: 2.6rem;
+  /* asegurar que no haya reglas que reduzcan el tamaño */
+  color: #8b0000;
+  margin-bottom: .35rem;
+}
 
-
+/* acomoda el texto respecto al icono */
+/* .datos-contacto .dato a {
+  padding-top: 0.6rem;
+  
+} */
 
 
 
@@ -170,7 +290,60 @@
   .newsletter-bodegon button {
     width: 100%;
   }
-.titulo-seccion img{
-  display: none;
+
+  .titulo-seccion img {
+    display: none;
+  }
+
+  /* Ajustes para que la intro coincida con .seguiremos en tablet y móviles */
+  .contacto-bodegon .intro-contacto {
+    font-size: 1.5rem;
+    margin: 8px 14px 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .contacto-bodegon .intro-contacto p {
+    font-size: 1.5rem;
+  }
+
+  .contacto-bodegon .intro-contacto li {
+    font-size:1.5rem;
+  }
+
+  .intro-sucursales {
+    font-size: 1.5rem;
+    margin: 8px 14px 16px;
+  }
 }
+
+@media (max-width: 520px) {
+
+.datos-contacto {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .dato span,
+  .dato i {
+    font-size: 1.8rem;
+  }
+
+
+
+  .contacto-bodegon .intro-contacto {
+    font-size: 1.5rem;
+    margin: 6px 12px 14px;
+  }
+
+  .contacto-bodegon .intro-contacto li {
+    font-size: 0.98rem;
+  }
+
+  .intro-sucursales {
+    font-size: 1.5rem;
+    margin: 6px 12px 14px;
+  }
 }
+
+

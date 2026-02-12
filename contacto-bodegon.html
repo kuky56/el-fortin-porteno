@@ -8,13 +8,7 @@
       name="description"
       content="Contactá con El Fortín Porteño en Monserrat. Consultas, reservas y pedidos. Estamos en México 1599, CABA. Teléfono: (11) 7036-0708."
     />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Contacto | El Fortín Porteño" />
-    <meta
-      property="og:description"
-      content="Reservá tu mesa en nuestro bodegón en CABA."
-    />
-    <meta property="og:type" content="website" />
+
     <meta
       property="og:url"
       content="https://www.elfortinporteno.com.ar/contacto-bodegon.html"
@@ -44,7 +38,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-modal.css" />
@@ -238,7 +232,6 @@
           Contacto y Reservas en CABA<br />
           Bodegón con parrilla argentina
         </h2>
-
         <a href="tel:+5491170360708" class="btn-telefono"> 📞 11 7036-0708 </a>
       </div>
     </section>
@@ -292,15 +285,34 @@
             />
           </h2>
 
+          <div class="intro-contacto">
+            <p>
+              Contactanos para reservas, pedidos o consultas. Te respondemos por
+              teléfono, email o redes sociales.
+            </p>
+            <ul>
+              <li><strong>México 1599</strong> — 10:00 a 00:00 hs</li>
+              <li><strong>Lavalle 168</strong> — 10:00 a 01:00 hs</li>
+              <li>
+                <strong>Medios de Pago:</strong> Efectivo · Tarjetas crédito y
+                débito · Transferencias
+              </li>
+            </ul>
+          </div>
+
           <!-- DATOS -->
           <div class="datos-contacto">
-            <div class="dato">
-              <span>📞</span>
+            <div class="dato bodegon-card">
+              <span
+                ><i class="bi bi-telephone-fill" aria-hidden="true"></i
+              ></span>
               <p><a href="tel:+541170360708">11 7036-0708</a></p>
             </div>
 
-            <div class="dato">
-              <span>✉️</span>
+            <div class="dato bodegon-card">
+              <span
+                ><i class="bi bi-envelope-fill" aria-hidden="true"></i
+              ></span>
               <p>
                 <a href="mailto:elfortinporteno@gmail.com"
                   >elfortinporteno@gmail.com</a
@@ -308,8 +320,8 @@
               </p>
             </div>
 
-            <div class="dato">
-              <span>📸</span>
+            <div class="dato bodegon-card">
+              <span><i class="bi bi-instagram" aria-hidden="true"></i></span>
               <p>
                 <a href="https://instagram.com/elfortinporteno" target="_blank"
                   >@elfortinporteno</a
@@ -329,7 +341,12 @@
               alt=""
             />
           </h2>
-          <!-- SUCURSALES -->
+
+          <p class="intro-sucursales">
+            Te esperamos en cualquiera de nuestras sucursales a degustar una
+            excelente comida casera de nuestro bodegón.
+          </p>
+
           <div class="sucursales">
             <div class="sucursal-card">
               <h3>México 1599 – CABA</h3>
@@ -377,7 +394,14 @@
       <div class="footer-contenedor">
         <!-- COLUMNA 1 -->
         <div class="footer-col">
-          <h4>El Fortín Porteño</h4>
+          <h4 style="display: flex; align-items: center; gap: 10px">
+            El Fortín Porteño
+            <img
+              src="bandera.jpg"
+              alt="Bandera de Argentina"
+              style="width: 30px; height: auto"
+            />
+          </h4>
           <p>
             Bodegón tradicional con auténtico sabor porteño. Cocina casera,
             platos clásicos y porciones abundantes.
@@ -398,20 +422,38 @@
         <div class="footer-col">
           <h4>Contacto</h4>
           <ul>
-            <li>📞 <a href="tel:1170360708">11 7036-0708</a></li>
-            <li>📍 México 1599 – CABA</li>
-            <li>📍 Lavalle 168 – CABA</li>
             <li>
-              ✉️
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <a href="tel:1170360708">11 7036-0708</a>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> México 1599
+              – CABA
+            </li>
+            <li>
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Lavalle 168
+              – CABA
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
               <a href="mailto:info@elfortinporteno.com.ar">
                 elfortinporteno@gmail.com</a
               >
             </li>
 
             <li>
-              📸
+              <i class="bi bi-instagram" aria-hidden="true"></i>
               <a href="https://instagram.com/elfortinporteno" target="_blank">
                 @elfortinporteno</a
+              >
+            </li>
+            <li>
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              <a
+                href="https://wa.me/5491170360708"
+                target="_blank"
+                aria-label="WhatsApp"
+                >11 7036-0708</a
               >
             </li>
           </ul>
