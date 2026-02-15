@@ -31,6 +31,9 @@ const images = [
   { url: "galeria/imagen29.jpg", title: "imagen29" },
   { url: "galeria/imagen30.jpg", title: "imagen30" },
   { url: "galeria/imagen31.jpg", title: "imagen31" },
+  { url: "galeria/milanesa-gigante4.jpg", title: "Milanesas gigantes a caballo" },
+  { url: "galeria/milanesa-napo.jpg", title: "Milanesa Napolitana" },
+  { url: "galeria/milanesas.jpg", title: "Milanesa gigantes" },
 ];
 
 let currentImageIndex = 0;

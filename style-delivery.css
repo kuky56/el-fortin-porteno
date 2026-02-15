@@ -463,12 +463,12 @@
   }
 
   .promo-header {
-    font-size: 0.95rem;
+    font-size: 1.8rem;
     padding: 10px 8px;
   }
 
   .promo-item {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 6px;
   }
 
@@ -479,18 +479,18 @@
   }
 
   .promo-precio {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 8px;
   }
 
   .promo-btn {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     padding: 8px 10px;
     margin-top: 8px;
   }
 
   .especiales-titulo {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .especiales-grid {
@@ -499,7 +499,7 @@
   }
 
   .especial-header {
-    font-size: 0.9rem;
+    font-size:1.8rem;
     padding: 10px 8px;
   }
 
@@ -509,16 +509,16 @@
 
   .especial-item {
     padding: 5px 0;
-    font-size: 0.8rem;
+    font-size:1rem;
   }
 
   .especial-precio {
-    font-size: 0.95rem;
+    font-size:1.2rem;
     padding: 8px;
   }
 
   .minutos-titulo {
-    font-size: 1.8rem;
+    font-size:2rem;
   }
 
   .minutos-grid {
@@ -527,7 +527,7 @@
   }
 
   .minutos-categoria-titulo {
-    font-size: 0.95rem;
+    font-size:1.4rem;
     padding: 10px 8px;
   }
 
@@ -537,15 +537,15 @@
 
   .minuto-item {
     padding: 6px 0;
-    font-size: 0.8rem;
+    font-size:1rem;
   }
 
   .minuto-precio {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .galeria-titulo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 30px;
   }
 
@@ -558,7 +558,7 @@
 
 
   .comida-nombre {
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 15px;
   }
 
@@ -590,8 +590,8 @@
   }
 
   .promociones-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
     padding: 0 12px;
 
   }
@@ -601,8 +601,8 @@
   }
 
   .especiales-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 18px;
     padding: 0 12px;
   }
 
@@ -611,8 +611,8 @@
   }
 
   .minutos-grid {
-    grid-template-columns:repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns:repeat(1, 1fr);
+    gap: 20px;
   }
 
   .galeria-titulo {
@@ -621,15 +621,15 @@
   }
 
   .galeria-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
     padding: 0 10px;
   }
 
 
 
   .comida-nombre {
-    font-size: 0.85rem;
+    font-size:1rem;
     padding: 10px;
   }
 }

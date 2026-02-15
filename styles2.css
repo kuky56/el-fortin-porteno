@@ -95,7 +95,7 @@ width: 300px;
   z-index: 4;
 }
 
-.photo3 {
+.photo4 {
   width: 300px;
     height: 350px;
   top: 280px;
@@ -104,7 +104,7 @@ width: 300px;
   z-index: 3;
 }
 
-.photo4 {
+.photo3 {
 width: 300px;
   height: 350px;
   top: 450px;
@@ -113,7 +113,7 @@ width: 300px;
   z-index: 2;
 }
 
-.photo5 {
+.photo6 {
   width: 300px;
     height: 350px;
   bottom: 20px;
@@ -121,7 +121,7 @@ width: 300px;
   transform: rotate(-7deg);
   z-index:11;
 }
-.photo6 {
+.photo5 {
   width: 300px;
   height: 350px;
 top: -290px;
@@ -154,7 +154,7 @@ top: -290px;
 
 .story-content {
 font-size: 1.25rem;
-    line-height: 32px;
+    line-height: 1.6em;
     letter-spacing: 0.01em;
     font-family: "Lato", Georgia, serif;
     /*  margin-bottom: 20px;
@@ -182,11 +182,11 @@ font-size: 1.25rem;
 }
 
 .intro {
-  font-size: 1.2em;
+  font-size: 1.25rem;
   font-family: 'Cabin', sans-serif;
   color: #8B2635;
   margin-bottom: 25px;
-  line-height:1.5em;
+  line-height:1.6em;
 }
 
 .story-content p {
@@ -549,6 +549,10 @@ cite {
   font-size: 1.8rem;line-height: 42px;
     letter-spacing: 0.01em;
 }
+
+ .intro {
+   font-size: 1.05em; /* para texto de nuestrabhistoria tablet */
+ }
 }
 
 

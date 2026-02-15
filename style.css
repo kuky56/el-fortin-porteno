@@ -136,7 +136,7 @@ body {
   font-weight: 700;
   font-size: 1rem;
   color: #e5d3b3;
-  /* Marrón oscuro */
+  /* MarrÃ³n oscuro */
   transition: 0.3s;
 }
 
@@ -144,13 +144,13 @@ body {
   color: #dd6e05;
 }
 
-/* Enlace activo del menú */
+/* Enlace activo del menÃº */
 .nav-menu a.active {
   color: #dd6e05;
   text-decoration: none;
 }
 
-/* Botón Reserva */
+/* BotÃ³n Reserva */
 .btn-reserva {
   background-color: var(--btn-primario);
   color: var(--btn-text) !important;
@@ -250,7 +250,7 @@ body {
   line-height: 1.4;
 }
 
-/* Botón teléfono */
+/* BotÃ³n telÃ©fono */
 .btn-telefono {
   display: inline-block;
   background-color: var(--btn-primario);
@@ -275,7 +275,7 @@ body {
   transform: scale(0.98);
 }
 
-/* El botón del hero mantiene el color rojo oscuro */
+/* El botÃ³n del hero mantiene el color rojo oscuro */
 .hero .btn-telefono {
   background-color: #8b0000;
   color: #fff;
@@ -285,7 +285,7 @@ body {
   background-color: #a30000;
 }
 
-/* Contenedor para CTAs en sección Especialidades */
+/* Contenedor para CTAs en secciÃ³n Especialidades */
 .especialidades-cta {
   display: inline-flex;
   gap: 12px;
@@ -300,9 +300,10 @@ body {
   display: none;
   /*   background: none */
   background: transparent;
-  border: none;
-  font-size: 2.2rem;
-  padding: 10px;
+ border: 2px solid #f3a64b;
+ border-radius:8px ;
+  font-size:2rem;
+  padding:1px 8px 1px 8px;
   cursor: pointer;
   color: #e5d3b3;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
@@ -337,14 +338,14 @@ body {
 }
 
 /* Layout fila intro: texto izquierda, imagen derecha */
-/* (Se eliminaron estilos provisionales de la sección intro) */
+/* (Se eliminaron estilos provisionales de la secciÃ³n intro) */
 
 .titulo-bodegon {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  /* separación base desktop */
+  /* separaciÃ³n base desktop */
   font-size: 2rem;
   font-family: "Cabin", sans-serif;
   color: #8b0000;
@@ -463,7 +464,7 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
 }
 
-/* 1️⃣ Línea con punto central */
+/* 1ï¸âƒ£ LÃ­nea con punto central */
 .separador-linea {
   position: relative;
   max-width: 500px;
@@ -484,7 +485,7 @@ body {
   transform: translateX(-50%);
 }
 
-/* 2️⃣ Separador doble */
+/* 2ï¸âƒ£ Separador doble */
 .separador-doble {
   max-width: 500px;
   height: 6px;
@@ -493,7 +494,7 @@ body {
   border-bottom: 1px solid #6e4a2a;
 }
 
-/* Estilos para los tags (botones pequeños) */
+/* Estilos para los tags (botones pequeÃ±os) */
 .tag {
   letter-spacing: 0.01em;
   font-family: 'Lato', sans-serif;
@@ -536,7 +537,7 @@ body {
   text-decoration: none;
 }
 
-/* 3️⃣ Separador con rombo */
+/* 3ï¸âƒ£ Separador con rombo */
 .separador-rombo-centro {
   position: relative;
   max-width: 500px;
@@ -565,7 +566,7 @@ body {
   background: #8b5a2b;
 }
 
-/* 4️⃣ Título con líneas laterales */
+/* 4ï¸âƒ£ TÃ­tulo con lÃ­neas laterales */
 /* .titulo-bodegon {
   position: relative;
   display: inline-block;
@@ -590,7 +591,7 @@ body {
   right: 0;
 } */
 
-/* 5️⃣ Título con rombos */
+/* 5ï¸âƒ£ TÃ­tulo con rombos */
 .titulo-bodegon-rombos {
   position: relative;
   display: inline-block;
@@ -616,7 +617,7 @@ body {
   right: 10px;
 }
 
-/* 6️⃣ Título con guarda lateral */
+/* 6ï¸âƒ£ TÃ­tulo con guarda lateral */
 /* .titulo-lateral {
   position: relative;
   padding-left: 18px;
@@ -661,7 +662,7 @@ body {
   font-size: 1rem !important;
   color: #3b2a1a;
   margin: 25px 0 25px 0 !important;
-  /* El párrafo debe tener su propio margen para no apretar el botón */
+  /* El pÃ¡rrafo debe tener su propio margen para no apretar el botÃ³n */
   flex-grow: 1;
 
 
@@ -670,8 +671,8 @@ body {
 
 
 
-/* Asegurar que el CTA (botón/tag) quede siempre al fondo de la tarjeta */
-/* Aplicamos flex column al contenedor y empujamos el botón con margin-top: auto */
+/* Asegurar que el CTA (botÃ³n/tag) quede siempre al fondo de la tarjeta */
+/* Aplicamos flex column al contenedor y empujamos el botÃ³n con margin-top: auto */
 .card,
 .card-servicio {
   display: flex;
@@ -705,8 +706,8 @@ body {
   color: #8b0000;
 }
 
-/* El separador previo al footer que ya tenías definido, 
-   asegurémonos que se vea bien aquí */
+/* El separador previo al footer que ya tenÃ­as definido, 
+   asegurÃ©monos que se vea bien aquÃ­ */
 .separador-footer {
   max-width: 600px;
   height: 1px;
@@ -714,7 +715,7 @@ body {
   margin: 40px auto;
 }
 
-/* Efecto hover extra para el botón de pedido en la tarjeta */
+/* Efecto hover extra para el botÃ³n de pedido en la tarjeta */
 .card-servicio .btn-telefono:hover {
   background-color: var(--btn-hover);
   color: var(--btn-text);
@@ -723,7 +724,7 @@ body {
 
 
 
-/* 7️⃣ Separador previo al footer */
+/* 7ï¸âƒ£ Separador previo al footer */
 .separador-footer {
   max-width: 600px;
   height: 1px;
@@ -790,7 +791,7 @@ body {
   display: block;
   margin: 0 auto;
   border-radius: 12px;
-  /* Bordes redondeados para que no se vea tan rígido */
+  /* Bordes redondeados para que no se vea tan rÃ­gido */
   border: 2px solid #b30000;
   /* Un borde rojo sutil como el logo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -836,14 +837,14 @@ body {
   font-size: 1.9rem;
 }
 
-/* Mantener tamaño del icono flotante (WhatsApp) sin que quede demasiado grande */
-/* Reglas específicas al final para evitar que las reglas globales de .bi lo alteren */
+/* Mantener tamaÃ±o del icono flotante (WhatsApp) sin que quede demasiado grande */
+/* Reglas especÃ­ficas al final para evitar que las reglas globales de .bi lo alteren */
 .whatsapp-float i,
 .whatsapp-float .bi {
   font-size: 2.3rem !important;
 }
 
-/* Asegurar que el icono dentro del botón flotante sea blanco, no bordo */
+/* Asegurar que el icono dentro del botÃ³n flotante sea blanco, no bordo */
 .whatsapp-float i,
 .whatsapp-float .bi {
   color: var(--color-blanco) !important;
@@ -853,7 +854,7 @@ body {
 
   .whatsapp-float i,
   .whatsapp-float .bi {
-    font-size:2rem !important;
+    font-size: 2rem !important;
   }
 }
 
@@ -912,7 +913,7 @@ body {
   }
 }
 
-/* banderita Argentina MÁS ANGOSTA con FRANJAS MÁS ANGOSTAS */
+/* banderita Argentina MÃS ANGOSTA con FRANJAS MÃS ANGOSTAS */
 .ribbon-arg {
   width: 120px;
   height: 120px;
@@ -929,7 +930,7 @@ body {
   display: block;
   width: 180px;
   padding: 10px 0;
-  /* Era 14px - MÁS ANGOSTO = franjas más finas */
+  /* Era 14px - MÃS ANGOSTO = franjas mÃ¡s finas */
   background: linear-gradient(to bottom,
       #74acdf 0%,
       #74acdf 33%,
@@ -952,14 +953,14 @@ body {
 }
 
 /* ------------------------------tarjetas-------------------------------------------------- */
-/* === GUARDAS ESTILO BODEGÓN PARA CARDS === */
+/* === GUARDAS ESTILO BODEGÃ“N PARA CARDS === */
 
-/* === SECCIÓN TARJETAS ESTILO BODEGÓN === */
+/* === SECCIÃ“N TARJETAS ESTILO BODEGÃ“N === */
 
 /* CONTENEDOR: Ahora centrado y con tope de ancho */
 .cards-especialidades {
   display: grid;
-  /* Bajamos el mínimo a 220px para que entren 3 cómodas */
+  /* Bajamos el mÃ­nimo a 220px para que entren 3 cÃ³modas */
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 1000px;
@@ -984,7 +985,7 @@ body {
   transform: translateY(-6px);
 }
 
-/* Imagen más petisa para que la tarjeta sea estilizada */
+/* Imagen mÃ¡s petisa para que la tarjeta sea estilizada */
 .card img {
   width: 100%;
   height: 160px;
@@ -998,7 +999,7 @@ body {
   background: #fdfaf5;
   border: 1px solid #d4a373;
   margin: 10px;
-  /* Margen interno más chico para que no sea tosca */
+  /* Margen interno mÃ¡s chico para que no sea tosca */
   padding: 15px 10px 30px 10px !important;
   flex-grow: 1;
   display: flex;
@@ -1007,11 +1008,11 @@ body {
 }
 
 /* ========================= */
-/* Reusable Bodegón card style */
-/* Use añadiendo la clase `bodegon-card` al contenedor HTML */
+/* Reusable BodegÃ³n card style */
+/* Use aÃ±adiendo la clase `bodegon-card` al contenedor HTML */
 .bodegon-card {
   background: #fdfaf5;
-  /* borde interior: más claro (dorado suave) */
+  /* borde interior: mÃ¡s claro (dorado suave) */
   border: 2px solid #e8caa0;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
@@ -1019,7 +1020,7 @@ body {
   padding-top: 22px;
   overflow: hidden;
   position: relative;
-  /* Outline exterior: más claro para efecto doble borde */
+  /* Outline exterior: mÃ¡s claro para efecto doble borde */
   outline: 2px solid #f3c77a;
   outline-offset: 6px;
 }
@@ -1029,7 +1030,7 @@ body {
   border-left: 5px double #F3A64B;
 }
 
-/* Pequeñas reglas para integración segura con los selectores existentes */
+/* PequeÃ±as reglas para integraciÃ³n segura con los selectores existentes */
 .bodegon-card .tag,
 .bodegon-card .btn-telefono,
 .bodegon-card .btn-menu {
@@ -1061,7 +1062,7 @@ body {
   opacity: 0.6;
 }
 
-/* Título más chico para que no rompa en 3 columnas */
+/* TÃ­tulo mÃ¡s chico para que no rompa en 3 columnas */
 .card-info h3 {
   color: #8b0000;
   font-size: 1.1rem;
@@ -1069,7 +1070,7 @@ body {
   padding-top: 5px;
 }
 
-/* Guarda Inferior debajo del título */
+/* Guarda Inferior debajo del tÃ­tulo */
 .card-info h3::after {
   content: "";
   display: block;
@@ -1126,13 +1127,13 @@ body {
   border-left: 5px double #F3A64B;
 }
 
-/* --- Ajuste para sección de 2 tarjetas (Promos/Servicios) --- */
+/* --- Ajuste para secciÃ³n de 2 tarjetas (Promos/Servicios) --- */
 
 .fila-de-dos {
-  /* Al subir el mínimo a 400px, forzamos a que solo entren 2 en el ancho total */
+  /* Al subir el mÃ­nimo a 400px, forzamos a que solo entren 2 en el ancho total */
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
   max-width: 1000px;
-  /* Un poco más angosto el grupo total para que no se estiren al infinito */
+  /* Un poco mÃ¡s angosto el grupo total para que no se estiren al infinito */
   margin: 40px auto;
 }
 
@@ -1150,7 +1151,7 @@ body {
   padding-bottom: 8px;
 }
 
-/* SECCIÓN FAQ */
+/* SECCIÃ“N FAQ */
 .faq-section {
   max-width: 900px;
   margin: 60px auto;
@@ -1225,7 +1226,7 @@ body {
 
 .faq-pregunta::after {
   content: '▼';
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #f3a64b;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -1233,7 +1234,7 @@ body {
   flex-shrink: 0;
 }
 
-/* CUANDO ESTÁ ACTIVO */
+/* CUANDO ESTÃ ACTIVO */
 .faq-item input:checked+.faq-pregunta {
   background: linear-gradient(135deg, #f3a64b 0%, #e89b3c 100%);
   color: white;
@@ -1253,7 +1254,7 @@ body {
   border-top: 2px solid #e0e0e0;
 }
 
-/* CUANDO ESTÁ ACTIVO */
+/* CUANDO ESTÃ ACTIVO */
 .faq-item input:checked~.faq-respuesta {
   max-height: 500px;
   border-top-color: #f3a64b;
@@ -1291,7 +1292,7 @@ body {
 .categoria-pedido h3 {
   font-family: 'Damion', cursive;
   color: #800000;
-  /* Bordó */
+  /* BordÃ³ */
   font-size: 28px;
   border-bottom: 2px solid #d4af37;
   /* Dorado */
@@ -1333,7 +1334,7 @@ body {
   background-color: #d4af37;
   /* Dorado */
   color: #800000;
-  /* Bordó */
+  /* BordÃ³ */
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 10px;
@@ -1358,11 +1359,13 @@ body {
 
 
 /* -------------------------media-------------------------------------- */
-/* RESPONSIVE: En el celu sí o sí deben ir de a 1 o 2 */
+/* RESPONSIVE: En el celu sÃ­ o sÃ­ deben ir de a 1 o 2 */
 @media (max-width: 850px) {
   .cards-especialidades {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     /* 2 por fila en tablets */
+    max-width: 500px;
+    /* puse estom para tarjetas de eventos */
   }
 }
 
@@ -1401,7 +1404,7 @@ body {
     font-size: 3.2rem;
   }
 
-  /* MENÚ - Todo junto */
+  /* MENÃš - Todo junto */
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -1417,7 +1420,7 @@ body {
 
   .nav-menu.show {
     max-height: 650px;
-
+padding-top: 30px;/* separa delboton listado */
   }
 
   /* Centrar verticalmente el overlay en tablets (<=900px) */
@@ -1452,7 +1455,7 @@ body {
   .nav-menu a {
     font-size: 1.4rem;
     display: block;
-    padding: 8px 0;
+    padding: 10px;
     min-height: 40px;
     line-height: 1.1;
     letter-spacing: 0.3px;
@@ -1494,7 +1497,7 @@ body {
     border-radius: 6px;
   }
 
-  /* BOTÓN RESERVA SIN EFECTOS EXTRA */
+  /* BOTÃ“N RESERVA SIN EFECTOS EXTRA */
   .nav-menu .btn-reserva {
     display: inline-block;
     margin: 10px auto;
@@ -1572,7 +1575,7 @@ body {
     /*    -webkit-backdrop-filter: blur(6px); */
     bottom: auto;
     top: 70%;
-    /* centrar verticalmente en móvil */
+    /* centrar verticalmente en mÃ³vil */
     transform: translate(-50%, -50%);
     /* centrar horizontal y verticalmente */
     padding: 28px 28px;
@@ -1638,7 +1641,7 @@ body {
   .titulo-bodegon {
     gap: 12px;
 
-    /* más compacto */
+    /* mÃ¡s compacto */
   }
 
   .titulo-bodegon img {
@@ -1698,10 +1701,12 @@ body {
     text-align: center;
   }
 
-
+.card-info h3 {
+  font-size:1.8rem ;
+}
 }
 
-/* MEDIA QUERY PARA MÓVIL PEQUEÑO */
+/* MEDIA QUERY PARA MÃ“VIL PEQUEÃ‘O */
 @media (max-width: 480px) {
   .main-header {
     min-height: 120px;
@@ -1747,7 +1752,7 @@ body {
   }
 
   .faq-pregunta::after {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .faq-respuesta-contenido {
@@ -1756,3 +1761,20 @@ body {
   }
 
 }
+@media only screen and (max-width: 900px) {
+  a[href="mailto:info@elfortinporteno.com.ar"] {
+      font-size: 18px;
+  }
+
+
+.card-info h3 {
+  
+  font-size: 1.8rem;
+
+}
+
+
+}
+
+
+
