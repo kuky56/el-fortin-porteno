@@ -1545,7 +1545,10 @@ padding-top: 30px;/* separa delboton listado */
   .card-info p {
     font-size: 1.4rem !important;
   }
-
+.navbar {
+  padding: 10px 0;
+  /* 25px arriba/abajo, 0 a los lados */
+}
 
 }
 
@@ -1759,6 +1762,10 @@ padding-top: 30px;/* separa delboton listado */
 .card-info h3 {
   font-size: 1.5rem;
 }
+
+
+
+
 }
 /* para tablet */
 @media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
@@ -1815,4 +1822,6 @@ a[href="mailto:info@elfortinporteno.com.ar"] {
   /* Altura cómoda para tablet */
   border-radius: 12px;
 }
+
+
 }
