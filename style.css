@@ -735,7 +735,7 @@ body {
 .footer {
   background: #2b1f17;
   color: #f3e9dc;
-  padding: 50px 20px 20px;
+  padding: 50px 10px 20px;
   font-size: 0.95rem;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.01em;
@@ -1701,9 +1701,6 @@ padding-top: 30px;/* separa delboton listado */
     text-align: center;
   }
 
-.card-info h3 {
-  font-size:1.8rem ;
-}
 }
 
 /* MEDIA QUERY PARA MÃ“VIL PEQUEÃ‘O */
@@ -1759,22 +1756,63 @@ padding-top: 30px;/* separa delboton listado */
     padding: 14px;
     font-size: 0.9rem;
   }
-
+.card-info h3 {
+  font-size: 1.5rem;
 }
-@media only screen and (max-width: 900px) {
-  a[href="mailto:info@elfortinporteno.com.ar"] {
-      font-size: 18px;
+}
+/* para tablet */
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+
+a[href="mailto:info@elfortinporteno.com.ar"] {
+    font-size: 16px;
   }
 
-
+  /* inserta aquí tu código */
 .card-info h3 {
-  
-  font-size: 1.8rem;
+
+  font-size: 1.6rem;
 
 }
+.promociones-grid,
+.especiales-grid,
+.minutos-grid {
+  /* Forzamos 2 columnas iguales */
+  grid-template-columns: repeat(2, 1fr) !important;
 
-
+  /* Opcional: ajustamos el ancho máximo para que no queden 
+       tarjetas gigantes si el contenedor es muy ancho */
+  max-width: 700px;
+  gap: 20px;
+  padding: 10px;
+}
+/* Convertimos el contenedor en un flex que permita envolver elementos */
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
+/* Las 3 columnas de texto se reparten el ancho arriba */
+.footer-col {
+  flex: 1 1 calc(33.33% - 20px);
+  min-width: 200px;
+  /* Evita que se amontonen demasiado */
+}
 
+/* La columna del mapa se fuerza a ocupar el 100% (cae a la siguiente fila) */
+.footer-col.footer-mapa {
+  flex: 1 1 100%;
+  max-width: 100% !important;
+  margin-top: 30px;
+}
 
+/* Aseguramos que el iframe use todo el espacio disponible */
+.footer-mapa iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 350px;
+  /* Altura cómoda para tablet */
+  border-radius: 12px;
+}
+}
