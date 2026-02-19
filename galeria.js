@@ -1,39 +1,104 @@
 /* --- Lista de Imágenes (Asegúrate de que los nombres coincidan) --- */
 const images = [
-  { url: "galeria/imagen1.jpg", title: "imagen1" },
-  { url: "galeria/imagen2.jpg", title: "imagen2" },
-  { url: "galeria/imagen3.jpg", title: "imagen3" },
-  { url: "galeria/imagen4.jpg", title: "imagen4" },
-  { url: "galeria/imagen5.jpg", title: "imagen5" },
-  { url: "galeria/imagen6.jpg", title: "imagen6" },
-  { url: "galeria/imagen7.jpg", title: "imagen7" },
-  { url: "galeria/imagen8.jpg", title: "imagen8" },
-  { url: "galeria/imagen9.jpg", title: "imagen9" },
-  { url: "galeria/imagen10.jpg", title: "imagen10" },
-  { url: "galeria/imagen11.jpg", title: "imagen11" },
-  { url: "galeria/imagen12.jpg", title: "imagen12" },
-  { url: "galeria/imagen13.jpg", title: "imagen13" },
-  { url: "galeria/imagen14.jpg", title: "imagen14" },
-  { url: "galeria/imagen15.jpg", title: "imagen15" },
-  { url: "galeria/imagen16.jpg", title: "imagen16" },
-  { url: "galeria/imagen17.jpg", title: "imagen17" },
-  { url: "galeria/imagen18.jpg", title: "imagen18" },
-  { url: "galeria/imagen19.jpg", title: "imagen19" },
-  { url: "galeria/imagen20.jpg", title: "imagen20" },
-  { url: "galeria/imagen21.jpg", title: "imagen21" },
-  { url: "galeria/imagen22.jpg", title: "imagen22" },
-  { url: "galeria/imagen23.jpg", title: "imagen23" },
-  { url: "galeria/imagen24.jpg", title: "imagen24" },
-  { url: "galeria/imagen25.jpg", title: "imagen25" },
-  { url: "galeria/imagen26.jpg", title: "imagen26" },
-  { url: "galeria/imagen27.jpg", title: "imagen27" },
-  { url: "galeria/imagen28.jpg", title: "imagen28" },
-  { url: "galeria/imagen29.jpg", title: "imagen29" },
-  { url: "galeria/imagen30.jpg", title: "imagen30" },
-  { url: "galeria/imagen31.jpg", title: "imagen31" },
-  { url: "galeria/milanesa-gigante4.jpg", title: "Milanesas gigantes a caballo" },
-  { url: "galeria/milanesa-napo.jpg", title: "Milanesa Napolitana" },
-  { url: "galeria/milanesas.jpg", title: "Milanesa gigantes" },
+  { url: "galeria/Rabas-a-la-romana.webp", title: "Rabas a la romana" },
+  { url: "galeria/Rabas-y-Heineken-1L.webp", title: "Rabas y Heineken 1L" },
+  {
+    url: "galeria/Pizza-rucula-y-prosciutto.webp",
+    title: "Pizza rúcula y prosciutto",
+  },
+  { url: "galeria/Asado-con-fritas.webp", title: "Asado con fritas" },
+  {
+    url: "galeria/Milanesa-suiza-p2-con-fritas.webp",
+    title: "Milanesa suiza para 2 con fritas",
+  },
+  {
+    url: "galeria/Pizza-jamón-y-morroneds.webp",
+    title: "Pizza jamón y morrones",
+  },
+  {
+    url: "galeria/Milanesas-bomba-p2-con-fritas.webp",
+    title: "Milanesa bomba para 2 con fritas",
+  },
+
+  { url: "galeria/Empanadas-fritas.webp", title: "Empanadas fritas" },
+  {
+    url: "galeria/Vacio-con-ensalada-mixta.webp",
+    title: "Vacio con ensalada mixta",
+  },
+  { url: "galeria/ensalada-del-chef.webp", title: "Ensalada del Chef" },
+  { url: "galeria/Arroz-con-pollo.webp", title: "Arroz con pollo" },
+  {
+    url: "galeria/Medialunas-jamón-queson-con-exprimido.webp",
+    title: "Medialunas jamón y queso con exprimido",
+  },
+  { url: "galeria/flan.webp", title: "Flan" },
+  { url: "galeria/Tequeños.webp", title: "Tequeños" },
+  {
+    url: "galeria/Sandwich-milanesa-completo2.webp",
+    title: "Sandwich milanesa completo",
+  },
+  { url: "galeria/Pastel-de-papas.webp", title: "Pastel de papas" },
+
+  { url: "galeria/Pernil-Matambre.webp", title: "Pernil-Matambre-Tortilla" },
+  {
+    url: "galeria/Canelones-verdura-con-fileto.webp",
+    title: "Canelones de verdura con salsa fileto",
+  },
+  {
+    url: "galeria/Pizza-rucula-y-prosciutto2.webp",
+    title: "Pizza rúcula y prosciutto",
+  },
+  {
+    url: "galeria/Sandwich-milanesa-completo.webp",
+    title: "Sandwich milanesa completo",
+  },
+  {
+    url: "galeria/Canelones-verdura-con-fileto.webp",
+    title: "Canelones de verdura con salsa fileto",
+  },
+  {
+    url: "galeria/Lentejas-a-la-española.webp",
+    title: "Lentejas a la española",
+  },
+  { url: "galeria/Hamburguesa-completa.webp", title: "Hamburguesa completa" },
+  {
+    url: "galeria/Carne-al-horno.webp",
+    title: "Carne al horno(menú del dia con bebida y postre)",
+  },
+  {
+    url: "galeria/Sorrentinos-con-estofado.webp",
+    title: "Sorrentinos con salsa/ estofado de carne",
+  },
+  {
+    url: "galeria/Tostado-mixto-con-licuado.webp",
+    title: "Tostado mixto con licuado",
+  },
+  { url: "galeria/Tira-asado-con-fritas.webp", title: "Asado con fritas" },
+  {
+    url: "galeria/Milanesa-riojana.webp",
+    title: "Milanesa riojana para 2 con fritas",
+  },
+  {
+    url: "galeria/Milanesas-bomba-p2-con-fritas.webp",
+    title: "Milanesa bomba para 2 con fritas",
+  },
+  {
+    url: "galeria/Parrillada-para-2.webp",
+    title: "Parrillada para 2 personas",
+  },
+  { url: "galeria/Postres.webp", title: "Postres" },
+  {
+    url: "galeria/milanesa-bomba-para-2.webp",
+    title: "Milanesas bomba para 2",
+  },
+  {
+    url: "galeria/milanesas-napolitanas-p2.webp",
+    title: "Milanesa Napolitana para 2 con fritas",
+  },
+  {
+    url: "galeria/Suprema-rellena.webp",
+    title: " Suprema rellena con fritas",
+  },
 ];
 
 let currentImageIndex = 0;

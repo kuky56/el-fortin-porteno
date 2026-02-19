@@ -31,6 +31,36 @@
   opacity: 1;
 }
 
+.comidas-caseras {
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  display: block;
+  margin-top: 5px;
+  color: #fdf5e6;
+}
+
+.btn-telefono-icon {
+  font-size: 25px; 
+  margin-right: 15px; 
+  filter: brightness(0) invert(1);
+}
+
+.completos-info {
+  line-height: 1.6em;
+  text-align: center;
+  color: #f6f5f5;
+  font-family: "Lato", sans-serif;
+  padding-top: 20px;
+}
+
+.completos-info a {
+  color: #fab5b5;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #d4af37;
+}
+
 /* ----------galeria------------ */
 .galeria-titulo {
   text-align: center;
@@ -113,7 +143,7 @@
 
 /* SECCIÓN PROMOCIONES */
 .promociones-seccion {
-  max-width: 1200px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -128,15 +158,21 @@
 }
 
 .promociones-subtitulo {
-  text-align: center;
+  text-align: left;
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   color: #8b0000;
-
-  margin-bottom: 50px;
+line-height: 1.6;
+  margin-bottom: 5px;
   font-weight: 600;
 }
-
+.pago-exclusivo{
+text-align: center;
+  color: #d9534f;
+   font-weight: bold;
+    font-size: 1.1rem; 
+  margin-bottom: 35px;
+}
 /* GRID DE PROMOCIONES */
 .promociones-grid {
   display: grid;
@@ -228,7 +264,7 @@
   border-top: 1px solid #e0e0e0;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #f3a64b;
+  color: #820404;
   margin: 8px 0 0 0;
 }
 
@@ -344,7 +380,7 @@
   border-top: 1px solid #e0e0e0;
   font-size: 1rem;
   font-weight: 700;
-  color: #f3a64b;
+  color: #820404;
 }
 
 /* SECCIÓN MINUTOS */
@@ -363,6 +399,41 @@
   margin-bottom: 50px;
   font-weight: 700;
 }
+
+.minutas-contenedor {
+  max-width: 950px;
+  /* El ancho máximo que pediste */
+  margin: 0 auto;
+  /* Centra todo el bloque horizontalmente */
+  padding: 00px 15px;
+  /* Espacio interno para que no toque los bordes en celu */
+  text-align:left;
+  /* Centra los títulos y párrafos */
+}
+
+.minutas-subtitulo {
+  font-family:"Lato", sans-serif;
+  font-size: 1.2rem;
+  /* Tamaño de letra equilibrado */
+  line-height: 1.6;
+  /* Espaciado entre renglones para mejor lectura */
+  color: #ffffff;
+  /* Color gris oscuro suave */
+  margin-bottom: 25px;
+  text-wrap: pretty;
+  /* Evita que queden palabras sueltas al final */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .minutos-grid {
   display: grid;
@@ -419,7 +490,7 @@
 
 .minuto-precio {
   font-weight: 700;
-  color: #f3a64b;
+  color: #820404;
   margin-left: 8px;
   flex-shrink: 0;
   font-size: 0.8rem;
@@ -446,7 +517,11 @@
 
 
 
-
+.pago-blanco {
+  color: #ffffff !important;
+  /* Al ser blanco, le ponemos un sombreado sutil para que se lea sobre el crema */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
 
 
 
@@ -582,12 +657,38 @@
  max-width: 320px;
  text-align: center;
  } */
+
+
+
+
+
 }
 
 @media (max-width: 480px) {
+
+
+
+
+
   .promociones-titulo {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
+.promociones-subtitulo {
+  padding: 0 10px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  color: #8b0000;
+
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.pago-exclusivo {
+ 
+  font-size: 1.4rem;
+  padding: 0 15px;
+}
 
   .promociones-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -597,7 +698,7 @@
   }
 
   .especiales-titulo {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .especiales-grid {
@@ -607,32 +708,91 @@
   }
 
   .minutos-titulo {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
+
+
+
+
+
+.minutas-subtitulo {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  /* Tamaño de letra equilibrado */
+  line-height: 1.6;
+  /* Espaciado entre renglones para mejor lectura */
+  color: #ffffff;
+  /* Color gris oscuro suave */
+  margin-bottom: 25px;
+  text-wrap: pretty;
+  /* Evita que queden palabras sueltas al final */
+}
+
 
   .minutos-grid {
     grid-template-columns:repeat(1, 1fr);
     gap: 20px;
   }
-
-  .galeria-titulo {
+.galeria-titulo {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
 
-  .galeria-container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    padding: 0 10px;
+  
+      .galeria-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        /* Fuerza las 2 columnas */
+        gap: 30px !important;
+        padding: 10px !important;
+      }
+  
+      .comida-item {
+        width: 100% !important;
+      }
+  
+      .comida-img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        /* Las hace cuadraditas y prolijas */
+        object-fit: cover;
+        border-radius: 15px;
+        /* Mantiene el borde redondeado de tus fotos */
+      }
+  
+      .comida-nombre {
+        font-size: 0.9rem;
+        text-align: center;
+        font-weight: bold;
+     }
+     
+     
+    .seguiremos h3{
+font-size: 1.2rem;
+    }
+     
+   li {
+    font-size: 1.5rem;
   }
+    .faq-titulo{
+      font-size: 2rem;
+    }
+    .faq-subtitulo{
+      font-size: 1.5rem !important;
+    } 
 
-
-
-  .comida-nombre {
-    font-size:1rem;
-    padding: 10px;
-  }
+.completos-info h3{
+  font-size: 1.2rem !important;
 }
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -650,6 +810,39 @@
   .repartidor {
     width: 250px;
   }
+.promociones-subtitulo {
+  margin: 0 20px;font-size: 1.8rem;
+}
+
+
+ .promociones-titulo {
+   font-size: 2rem;
+ }
+
+ .minutas-subtitulo {
+   
+   font-size: 1.8rem;
+   
+ }
+.seguiremos h3 {
+  font-size: 1.8rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+.pago-exclusivo {
+
+  font-size: 1.6rem;
+  padding: 0 15px;
+}
+.faq-subtitulo {
+  font-size: 1.8rem;
+}
+
+
+
+
 }
 
 /* Móvil */

@@ -2,9 +2,72 @@
   "categoria": "Empanadas",
   "label": "Empanadas",
   "nombre_ingles": "Empanadas",
-  "items": [
-    { "id": 1, "nombre": "Chorizo y champiñon", "descripcion": "Chorizo sausage & mushroom", "precio": 4000 },
-    { "id": 2, "nombre": "Bondiola barbacoa", "descripcion": "BBQ pork shoulder", "precio": 4000 },
-    { "id": 3, "nombre": "Vacio y provoleta", "descripcion": "Steak & provoletta cheese", "precio": 4000 }
+  "subcategorias": [
+    {
+      "nombre": "Fritas",
+      "nombre_ingles": "Fried",
+      "items": [
+        {
+          "id": 1,
+          "nombre": "Chorizo y champiñón",
+          "descripcion": "Chorizo sausage & mushroom",
+          "precio": 4000
+        },
+        {
+          "id": 2,
+          "nombre": "Bondiola barbacoa",
+          "descripcion": "BBQ pork shoulder",
+          "precio": 4000
+        },
+        {
+          "id": 3,
+          "nombre": "Vacío y provoleta",
+          "descripcion": "Steak & provoletta cheese",
+          "precio": 4000
+        }
+      ]
+    },
+    {
+      "nombre": "Al Horno",
+      "nombre_ingles": "Baked",
+      "items": [
+        {
+          "id": 4,
+          "nombre": "Cortada a cuchillo",
+          "descripcion": "Beef",
+          "precio": 3000
+        },
+        {
+          "id": 5,
+          "nombre": "Pollo",
+          "descripcion": "Chicken",
+          "precio": 3000
+        },
+        {
+          "id": 6,
+          "nombre": "Jamón y queso",
+          "descripcion": "Ham & cheese",
+          "precio": 3000
+        },
+        {
+          "id": 7,
+          "nombre": "Caprese",
+          "descripcion": "Tomato, cheese, basil",
+          "precio": 3000
+        },
+        {
+          "id": 8,
+          "nombre": "Roquefort",
+          "descripcion": "Blue cheese",
+          "precio": 3000
+        },
+        {
+          "id": 9,
+          "nombre": "Queso y cebolla",
+          "descripcion": "Cheese & onion",
+          "precio": 3000
+        }
+      ]
+    }
   ]
 }

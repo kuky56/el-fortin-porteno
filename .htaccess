@@ -1,12 +1,17 @@
+# 1. ESPECIFICAR CODIFICACIÓN (Solución al análisis SEO)
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .json
+
 RewriteEngine On
 
 # Redirigir dominio con tilde al dominio sin tilde (cualquier protocolo)
 RewriteCond %{HTTP_HOST} ^(www\.)?elfortinporteño\.com\.ar$ [NC]
 RewriteRule ^(.*)$ https://www.elfortinporteno.com.ar/$1 [R=301,L]
 
-# Redirigir sin www a www (dominio sin tilde)
-RewriteCond %{HTTP_HOST} ^elfortinporteno\.com\.ar$ [NC]
-RewriteRule ^(.*)$ https://www.elfortinporteno.com.ar/$1 [R=301,L]
+# Redirigir de www a SIN www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.elfortinporteno\.com\.ar [NC]
+RewriteRule ^(.*)$ https://elfortinporteno.com.ar/$1 [L,R=301]
 
 # Forzar HTTPS en todo el sitio
 RewriteCond %{HTTPS} off
@@ -26,19 +31,30 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 # Comprimir contenido (mejora velocidad)
 <IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
 
-# Cache en navegador (mejora velocidad)
+# --- INICIO DE CACHÉ OPTIMIZADO PARA IMÁGENES ---
 <IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresByType text/html "access plus 1 week"
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
-    ExpiresByType image/jpeg "access plus 1 month"
-    ExpiresByType image/gif "access plus 1 month"
-    ExpiresByType image/png "access plus 1 month"
+    
+    # Imágenes y archivos estáticos (1 año - Resuelve error de PageSpeed)
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Scripts y CSS (1 año)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    
+    # HTML (Caché corto para que los cambios se vean rápido)
+    ExpiresByType text/html "access plus 1 hour"
 </IfModule>
+# --- FIN DE CACHÉ OPTIMIZADO ---
 
 # Prevenir listado de directorios
 Options -Indexes

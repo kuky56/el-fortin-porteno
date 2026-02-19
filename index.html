@@ -1,30 +1,40 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!-- ========== META TAGS ESENCIALES ========== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El Fortín Porteño | Bodegón y Parrilla en CABA</title>
+    <title>El Fortín Porteño | Milanesas Gigantes y Parrilla en CABA</title>
     <meta
       name="description"
-      content="El Fortín Porteño es un bodegón y parrilla en Monserrat, CABA. Ofrecemos comida casera, porciones abundantes y los mejores sabores de la cocina argentina. ¡Vení a conocernos!"
+      content="El Fortín Porteño: bodegón en Monserrat con milanesas gigantes, parrilla y pastas. Comida casera, porciones abundantes y el mejor sabor de CABA."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://elfortinporteno.com.ar/" />
+    <meta
+      name="google-site-verification"
+      content="38Bjow-NMlwJiRVbtgbI8bT_0oCfZQVMD1oxz1HWU2Y"
+    />
+    <!-- ========== GEO TAGS ========== -->
     <meta name="geo.region" content="AR-C" />
     <meta name="geo.placename" content="Buenos Aires" />
     <meta name="geo.position" content="-34.6177;-58.3838" />
     <meta name="ICBM" content="-34.6177, -58.3838" />
-    <!-- Open Graph -->
+
+    <!-- ========== OPEN GRAPH ========== -->
     <meta property="og:title" content="El Fortín Porteño | Bodegón en CABA" />
     <meta
       property="og:description"
       content="Comidas caseras, parrilla y porciones abundantes en CABA."
     />
     <meta property="og:type" content="restaurant" />
-    <meta property="og:url" content="https://www.elfortinporteno.com.ar/" />
+    <meta property="og:url" content="https://elfortinporteno.com.ar/" />
     <meta
       property="og:image"
-      content="https://www.elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
+      content="https://elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
     />
-    <!-- Twitter -->
+
+    <!-- ========== TWITTER ========== -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="El Fortín Porteño | Bodegón en CABA" />
     <meta
@@ -33,24 +43,99 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
+      content="https://elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
     />
-    <!-- Fuentes de Google -->
+
+    <!-- ========== PRECONEXIONES A CDN (Reduce latencia) ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- ========== GOOGLE FONTS - ASINCRÓNICO (MODERNO) ========== -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
+      as="style"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- ========== CSS CRÍTICO (Bloqueante pero optimizado) ========== -->
+    <link rel="preload" href="/critical.css" as="style" />
+
+    <!-- ========== CSS SECUNDARIO (Carga asincrónica) ========== -->
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link rel="stylesheet" href="style.css" />
+    </noscript>
+
+    <!-- ========== BOOTSTRAP ICONS - OPTIMIZADO ========== -->
+    <!-- Preload de la fuente woff2 (carga en paralelo) -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- CSS de Bootstrap Icons (diferido con media=print) -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      media="print"
+      onload="this.media = 'all'"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-modal.css" />
 
-    <link rel="canonical" href="https://www.elfortinporteno.com.ar/" />
+    <!-- Asegurar font-display: swap para prevenir FOIT y mejorar CLS -->
+    <style>
+      @font-face {
+        font-family: "bootstrap-icons";
+        font-display: swap;
+        src: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+    <style>
+      /* estilo del h1 */
+      /* MEDIA QUERY PARA CELULARES */
+      @media screen and (max-width: 480px) {
+        .texto-bodegon {
+          font-size: 0.9rem !important;
+          /* Aquí achicamos la letra */
+          letter-spacing: 2px !important;
+          /* Achicamos el espacio para que entre en una línea */
+        }
+      }
+    </style>
+    <!-- ========== CSS MODAL - DIFERIDO ========== -->
+    <!-- Solo se necesita cuando se abre un modal, se carga en background -->
+    <link
+      rel="stylesheet"
+      href="style-modal.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
 
+    <!-- ========== FAVICONES ========== -->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -108,34 +193,51 @@
       sizes="32x32"
       href="favicones/favicon-32x32.png"
     />
+    <!-- ========== FAVICONES ========== -->
+
+    <!-- ========== FAVICONES ========== -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
     <link
-      rel="icono"
-      tipo="image/png"
-      tamaños="96x96"
-      href="favicones/favicon-96x96.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicones/favicon-32x32.png"
     />
     <link
-      rel="icono"
-      tipo="image/png"
-      tamaños="16x16"
-      href="favicones/favicon-16x16.png"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicones/favicon-16x16.png"
     />
-    <link rel="manifiesto" href="favicones/manifiesto.json" />
-    <meta nombre="msapplication-TileColor" contenido="#ffffff" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicones/android-icon-192x192.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicones/apple-icon-180x180.png"
+    />
+
+    <link rel="manifest" href="/favicones/manifest.json" />
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
-      nombre="msapplication-TileImage"
-      contenido="favicones/ms-icon-144x144.png"
+      name="msapplication-TileImage"
+      content="/favicones/ms-icon-144x144.png"
     />
-    <meta nombre="theme-color" contenido="#ffffff" />
-    <meta name="robots" content="index, follow" />
-    <!-- Schema Markup SEO Local - Home -->
-    <!-- Schema -->
+    <meta name="theme-color" content="#ffffff" />
+    <!-- ========== SCHEMA MARKUP SEO ========== -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Restaurant",
         "name": "El Fortín Porteño",
-        "image": "https://www.elfortinporteno.com.ar/imagen/pc/frente-local.jpg",
+        "image": "https://elfortinporteno.com.ar/imagen/pc/frente-local.jpg",
         "telephone": "+5491170360708",
         "address": {
           "@type": "PostalAddress",
@@ -147,11 +249,12 @@
         "servesCuisine": "Cocina porteña, parrilla argentina, comida casera",
         "priceRange": "$$",
         "openingHours": ["Mo-Su 10:00-00:00"],
-        "url": "https://www.elfortinporteno.com.ar",
+        "url": "https://elfortinporteno.com.ar",
         "sameAs": ["https://www.instagram.com/elfortinporteno"]
       }
     </script>
   </head>
+
   <body>
     <!-- CABECERA CON TEXTURA (Imagen 3) -->
     <header class="main-header">
@@ -160,10 +263,24 @@
       </div>
 
       <div class="header-content">
-        <h1 class="titulo-principal">El Fortín Porteño</h1>
+        <h1 class="titulo-principal">
+          El Fortín Porteño <br /><span
+            class="texto-bodegon"
+            style="
+              font-size: 1.2rem;
+              font-weight: normal;
+              letter-spacing: 4px;
+              display: block;
+              margin-top: 5px;
+              color: #fdf5e6;
+            "
+          >
+            BODEGÓN en MONSERRAT
+          </span>
+        </h1>
         <div class="subtitulo-wrapper">
           <div class="linea"></div>
-          <h2 class="subtitulo">Bodegón | Parrilla | Pizzería</h2>
+          <h2 class="subtitulo">Restaurante | Parrilla | Pizzería</h2>
           <div class="linea"></div>
         </div>
       </div>
@@ -244,7 +361,13 @@
           Parrilla clásica y cocina casera
         </h2>
 
-        <a href="tel:+5491170360708" class="btn-telefono"> 📞 11 7036-0708 </a>
+        <a href="tel:+5491170360708" class="btn-telefono"><span style="
+        font-size: 25px; 
+        margin-right: 15px; 
+        filter: brightness(0) invert(1);
+    ">
+        📞
+    </span>11 7036-0708 </a>
       </div>
     </section>
 
@@ -254,14 +377,14 @@
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-izq"
-            alt=""
+            alt="separadores-adornos"
           />
 
-          Bodegón en Monserrat
+          Bienvenidos a El Fortín Porteño
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores-adornos"
           />
           <!-- <div class="separador-linea"></div> -->
         </h2>
@@ -270,11 +393,11 @@
           con auténtica identidad porteña, respetando las recetas tradicionales
           y los sabores de siempre. <br />
           <strong>El Fortín Porteño</strong>, ubicado en la calle
-          <strong>México al 1599</strong> en el barrio de Monserrat, es un
-          bodegón clásico que combina la calidez de la cocina casera con la
-          tradición de la parrilla argentina. <br />
+          <strong>México al 1599</strong> en el barrio de Monserrat, es un bodegón clásico que combina
+          la calidez de la cocina casera con la tradición de la parrilla
+          argentina. <br />
           Porciones abundantes, la atención cercana y el ambiente acogedor y
-          familiar invitan a disfrutar sin apuros. <br />
+          familiar invitan a disfrutar. <br />
           Un lugar para compartir buena comida, mesas largas y el verdadero
           espíritu de los bodegones de Buenos Aires
         </p>
@@ -289,12 +412,12 @@
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores-adornos"
           />Nuestras Especialidades
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores-adornos"
           />
         </h2>
 
@@ -310,42 +433,42 @@
         </p>
         <div class="cards-especialidades">
           <a href="menu-bodegon.html" class="card">
-            <img src="fotos-comidas/parrilladas.jpg" alt="Parrillada" />
+            <img src="fotos-comidas/parrilladas.webp" alt="Parrillada" />
             <div class="card-info">
               <h3>Parrilla y Carnes Rojas</h3>
             </div>
           </a>
 
           <a href="menu-bodegon.html" class="card">
-            <img src="fotos-comidas/canelones.JPEG" alt="Pastas caseras" />
+            <img src="fotos-comidas/canelones.webp" alt="Pastas caseras" />
             <div class="card-info">
               <h3>Pastas Caseras</h3>
             </div>
           </a>
 
           <a href="menu-bodegon.html" class="card">
-            <img src="fotos-comidas/milanesas.jpg" alt="Milanesas gigantes" />
+            <img src="fotos-comidas/milanesas.webp" alt="Milanesas gigantes" />
             <div class="card-info">
               <h3>Milanesas Gigantes</h3>
             </div>
           </a>
 
           <a href="menu-bodegon.html" class="card">
-            <img src="fotos-comidas/postres.jpg" alt="Postres" />
+            <img src="fotos-comidas/postres.webp" alt="Postres" />
             <div class="card-info">
               <h3>Postres clásicos</h3>
             </div>
           </a>
 
           <a href="menu-bodegon.html" class="card">
-            <img src="fotos-comidas/rabas.jpg" alt="Pescados" />
+            <img src="fotos-comidas/rabas.webp" alt="Pescados" />
             <div class="card-info">
               <h3>Entradas para Compartir</h3>
             </div>
           </a>
 
           <a href="menu-bodegon.html" class="card">
-            <img src="fotos-comidas/pizzas.jpg" alt="Pizzas" />
+            <img src="fotos-comidas/pizzas.webp" alt="Pizzas" />
             <div class="card-info">
               <h3>Pizzas y Empanadas</h3>
             </div>
@@ -366,12 +489,12 @@
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores-adornos"
           />Platos Clásicos
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores-adornos"
           />
         </h2>
         <!-- <div class="separador-rombo-centro"></div> -->
@@ -386,24 +509,30 @@
 
         <div class="cards-especialidades">
           <a href="menu-bodegon.html" class="card">
-            <img src="fotos-comidas/guiso de lentejas.jpg" alt="Cazuelas" />
-            <div class="card-info"><h3>Cazuelas y Guisos</h3></div>
+            <img src="fotos-comidas/guiso-de-lentejas.webp" alt="Cazuelas" />
+            <div class="card-info">
+              <h3>Cazuelas y Guisos</h3>
+            </div>
           </a>
 
           <a href="menu-bodegon.html" class="card">
             <img
-              src="fotos-comidas/hamburguesas.jpg"
+              src="fotos-comidas/hamburguesas.webp"
               alt="Hamburguesas caseras completas"
             />
-            <div class="card-info"><h3>Hamburguesas Caseras</h3></div>
+            <div class="card-info">
+              <h3>Hamburguesas Caseras</h3>
+            </div>
           </a>
 
           <a href="menu-bodegon.html" class="card">
             <img
-              src="fotos-comidas/tortillas.jpg"
+              src="fotos-comidas/tortillas.webp"
               alt="tortilla a la española"
             />
-            <div class="card-info"><h3>Tortillas</h3></div>
+            <div class="card-info">
+              <h3>Tortillas</h3>
+            </div>
           </a>
         </div>
 
@@ -417,13 +546,13 @@
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-izq"
-            alt=""
+            alt="separadores-adornos"
           />
           Eventos y Sabores para Llevar a tu Hogar
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores-adornos"
           />
         </h2>
 
@@ -441,7 +570,7 @@
             aria-label="Tu Evento en el Fortín - ver Chef y Eventos"
           >
             <img
-              src="fotos-comidas/salon-show.jpg"
+              src="fotos-comidas/salon-show.webp"
               alt="Eventos y reuniones en El Fortín Porteño"
             />
             <div class="card-info">
@@ -467,7 +596,7 @@
             aria-label="Catering y Cocineros - ver Catering"
           >
             <img
-              src="fotos-comidas/catering-servicio.jpg"
+              src="fotos-comidas/catering-servicio.webp"
               alt="Servicio de catering y cocineros a domicilio"
             />
             <div class="card-info">
@@ -491,7 +620,7 @@
             aria-label="Banquetes por Encargo - ver Pedidos por Encargo"
           >
             <img
-              src="fotos-comidas/pernil-de-cerdo-por-encargue.jpg"
+              src="fotos-comidas/pernil-de-cerdo-por-encargue.webp"
               alt="Pernil de cerdo y carnes por encargo"
             />
             <div class="card-info">
@@ -512,7 +641,13 @@
           </a>
         </div>
         <div style="text-align: center; margin-top: 18px">
-          <a href="tel:+5491170360708" class="tag"> 📞 11 7036-0708 </a>
+          <a href="tel:+5491170360708" class="tag"><span style="
+        font-size: 25px; 
+        margin-right: 15px; 
+     filter: brightness(1.2) sepia(1) saturate(20) hue-rotate(15deg);
+    ">
+        📞
+    </span>11 7036-0708 </a>
         </div>
         <div class="separador-doble"></div>
       </div>
@@ -524,13 +659,13 @@
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-izq"
-            alt=""
+            alt="separadores-adornos"
           />
           El Fortín en tu Casa
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores-adornos"
           />
         </h2>
 
@@ -544,7 +679,7 @@
         <div class="cards-especialidades fila-de-dos">
           <div class="card card-servicio">
             <img
-              src="imagen/delivery-home.jpg"
+              src="imagen/delivery-home.webp"
               alt="Delivery de bodegón El Fortín Porteño"
             />
             <div class="card-info">
@@ -645,8 +780,8 @@
         <div class="footer-col">
           <h4>Horarios</h4>
           <ul>
-            <li><strong>México 1599</strong><br />10:00 a 00:00 hs</li>
-            <li><strong>Lavalle 168</strong><br />10:00 a 01:00 hs</li>
+            <li><strong>México 1599</strong><br />09:00 a 00:30 hs</li>
+            <!-- <li><strong>Lavalle 168</strong><br />10:00 a 01:00 hs</li> -->
           </ul>
 
           <h4>Medios de Pago</h4>
@@ -665,20 +800,20 @@
               – CABA
             </li>
             <li>
-              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Lavalle 168
-              – CABA
+              <!--   <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Lavalle 168
+            – CABA -->
             </li>
             <li>
               <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-              <a href="mailto:info@elfortinporteno.com.ar"
-                >elfortinporteno@gmail.com</a
+              <a href="mailto: elfortinporteno@gmail.com">
+                elfortinporteno@gmail.com</a
               >
             </li>
 
             <li>
               <i class="bi bi-instagram" aria-hidden="true"></i>
-              <a href="https://instagram.com/elfortinporteno" target="_blank"
-                >@elfortinporteno</a
+              <a href="https://instagram.com/elfortinporteno" target="_blank">
+                @elfortinporteno</a
               >
             </li>
             <li>
@@ -696,17 +831,7 @@
         <!-- COLUMNA 4 -->
         <div class="footer-col footer-mapa">
           <h4>Cómo llegar</h4>
-
-          <iframe
-            src="https://www.google.com/maps/d/u/1/embed?mid=1ZRxHWA5Sg0zI-zbypmWkrt3W9c17L5U&ehbc=2E312F&noprof=1"
-            width="100%"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.41998763199!2d-58.42487418916014!3d-34.61547579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0035744d2b%3A0xae2107494ca4b28e!2sEl%20Fortin%20Porte%C3%B1o%20-%20Monserrat!5e0!3m2!1ses-419!2sar!4v1771388185055!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
@@ -717,7 +842,6 @@
         </p>
       </div>
     </footer>
-
     <script src="script.js"></script>
     <script src="script-modal.js"></script>
     <a
@@ -735,7 +859,7 @@
           <div class="logo-bundle">
             <img src="imagen/logo-fuego.jpg" alt="Logo" />
             <div>
-              <h1 class="titulo-damion">El Fortín Porteño</h1>
+              <h2 class="titulo-damion">El Fortín Porteño</h2>
               <span class="subtitulo-lato">Reserva tu Mesa</span>
             </div>
           </div>
@@ -752,7 +876,7 @@
               <label>Sucursal</label>
               <select id="sucursal">
                 <option value="Mexico 1599">México 1599</option>
-                <option value="Lavalle 168">Lavalle 168</option>
+       <!--          <option value="Lavalle 168">Lavalle 168</option> -->
               </select>
             </div>
 
@@ -812,6 +936,5 @@
         </div>
       </div>
     </div>
-    <!-- ----------------------------fin modal------ -->
   </body>
 </html>

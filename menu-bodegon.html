@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!-- ========== META TAGS ESENCIALES ========== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menú del Bodegón | El Fortín Porteño - Monserrat</title>
@@ -8,6 +9,19 @@
       name="description"
       content="Explorá el menú de El Fortín Porteño. Platos caseros, parrilla, pastas, milanesas y más. Sabores auténticos y porciones abundantes. Mexico 1599 CABA. tel.(11) 7036-0708"
     />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://elfortinporteno.com.ar/menu-bodegon.html"
+    />
+
+    <!-- ========== GEO TAGS ========== -->
+    <meta name="geo.region" content="AR-C" />
+    <meta name="geo.placename" content="Buenos Aires" />
+    <meta name="geo.position" content="-34.6177;-58.3838" />
+    <meta name="ICBM" content="-34.6177, -58.3838" />
+
+    <!-- ========== OPEN GRAPH ========== -->
     <meta property="og:title" content="Menú | El Fortín Porteño" />
     <meta
       property="og:description"
@@ -16,33 +30,103 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://www.elfortinporteno.com.ar/menu-bodegon.html"
+      content="https://elfortinporteno.com.ar/menu-bodegon.html"
     />
     <meta
       property="og:image"
-      content="https://www.elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
+      content="https://elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
     />
 
-    <meta name="robots" content="index, follow" />
-    <!-- Fuentes de Google -->
+    <!-- ========== TWITTER ========== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Menú El Fortín Porteño" />
+    <meta
+      name="twitter:description"
+      content="Platos caseros, parrilla y comidas deliciosas."
+    />
+    <meta
+      name="twitter:image"
+      content="https://elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
+    />
+
+    <!-- ========== PRECONEXIONES A CDN (Reduce latencia) ========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- ========== GOOGLE FONTS - ASINCRÓNICO (MODERNO) ========== -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
+      as="style"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="canonical"
-      href="https://www.elfortinporteno.com.ar/menu-bodegon.html"
-    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- ========== CSS CRÍTICO (Bloqueante pero necesario) ========== -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style3.css" />
     <link rel="stylesheet" href="galeria.css" />
-    <link rel="stylesheet" href="style-modal.css" />
+
+    <!-- ========== BOOTSTRAP ICONS - OPTIMIZADO ========== -->
+    <!-- Preload de la fuente woff2 (carga en paralelo) -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- CSS de Bootstrap Icons (diferido con media=print) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- Asegurar font-display: swap para prevenir FOIT y mejorar CLS -->
+    <style>
+      @font-face {
+        font-family: "bootstrap-icons";
+        font-display: swap;
+        src: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+    <style>
+      /* estilo del h1 */
+      /* MEDIA QUERY PARA CELULARES */
+      @media screen and (max-width: 480px) {
+        .texto-bodegon {
+          font-size: 0.9rem !important;
+          /* Aquí achicamos la letra */
+          letter-spacing: 2px !important;
+          /* Achicamos el espacio para que entre en una línea */
+        }
+      }
+    </style>
+    <!-- ========== CSS MODAL - DIFERIDO ========== -->
+    <!-- Solo se necesita cuando se abre un modal, se carga en background -->
+    <link
+      rel="stylesheet"
+      href="style-modal.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- ========== FAVICONES ========== -->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -101,31 +185,32 @@
       href="favicones/favicon-32x32.png"
     />
     <link
-      rel="icono"
-      tipo="image/png"
-      tamaños="96x96"
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
       href="favicones/favicon-96x96.png"
     />
     <link
-      rel="icono"
-      tipo="image/png"
-      tamaños="16x16"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
       href="favicones/favicon-16x16.png"
     />
-    <link rel="manifiesto" href="favicones/manifiesto.json" />
-    <meta nombre="msapplication-TileColor" contenido="#ffffff" />
+    <link rel="manifest" href="favicones/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
-      nombre="msapplication-TileImage"
-      contenido="favicones/ms-icon-144x144.png"
+      name="msapplication-TileImage"
+      content="favicones/ms-icon-144x144.png"
     />
-    <meta nombre="theme-color" contenido="#ffffff" />
-    <!-- Schema Markup SEO - Menú -->
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <!-- ========== SCHEMA MARKUP SEO - MENÚ ========== -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Menu",
         "name": "Menú El Fortín Porteño",
-        "url": "https://www.elfortinporteno.com.ar/menu-bodegon.html",
+        "url": "https://elfortinporteno.com.ar/menu-bodegon.html",
         "provider": {
           "@type": "Restaurant",
           "name": "El Fortín Porteño"
@@ -133,6 +218,7 @@
       }
     </script>
   </head>
+
   <body>
     <!-- CABECERA CON TEXTURA (Imagen 3) -->
     <header class="main-header">
@@ -141,10 +227,24 @@
       </div>
 
       <div class="header-content">
-        <h1 class="titulo-principal">El Fortín Porteño</h1>
+        <h1 class="titulo-principal">
+          El Fortín Porteño <br /><span
+            class="texto-bodegon"
+            style="
+              font-size: 1.2rem;
+              font-weight: normal;
+              letter-spacing: 4px;
+              display: block;
+              margin-top: 5px;
+              color: #fdf5e6;
+            "
+          >
+        MILANESAS y PLATOS CASEROS
+          </span>
+        </h1>
         <div class="subtitulo-wrapper">
           <div class="linea"></div>
-          <h2 class="subtitulo">Bodegón | Parrilla | Pizzería</h2>
+          <h2 class="subtitulo">Restaurante | Parrilla | Pizzería</h2>
           <div class="linea"></div>
         </div>
       </div>
@@ -225,7 +325,13 @@
           Porciones abundantes <br />Entregas en CABA
         </h2>
 
-        <a href="tel:+5491170360708" class="btn-telefono"> 📞 11 7036-0708 </a>
+        <a href="tel:+5491170360708" class="btn-telefono"><span style="
+        font-size: 25px; 
+        margin-right: 15px; 
+        filter: brightness(0) invert(1);
+    ">
+        📞
+    </span>11 7036-0708 </a>
       </div>
     </section>
 
@@ -235,13 +341,13 @@
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-izq"
-            alt=""
+            alt="separadores y bordes"
           />
           Nuestra Carta
           <img
             src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
             class="svg-der"
-            alt=""
+            alt="separadores y bordes"
           />
         </h2>
 
@@ -249,11 +355,11 @@
           Nuestra carta es un recorrido por los sabores más queridos de nuestra
           tierra. Desde el fuego de la parrilla hasta nuestras pastas amasadas
           con dedicación, cada plato está pensado para ser compartido y
-          disfrutado. <br />
+          disfrutado.
           <strong>Porciones abundantes</strong>, ingredientes frescos y ese
           toque casero que solo un verdadero bodegón puede ofrecer. <br />
           <span style="color: #8b7355; font-weight: bold"
-            >¡Elegí tu sección favorita y buen provecho!</span
+            >¡Elegí tu comida favorita y buen provecho!</span
           >
         </p>
 
@@ -280,7 +386,11 @@
 
       <div class="lightbox-content">
         <div id="loader" class="loader"></div>
-        <img id="lightboxImg"  src="imagen-delivery/entradas.jpg" alt="Vista ampliada" />
+        <img
+          id="lightboxImg"
+          src="imagen-delivery/entradas.webp"
+          alt="Vista ampliada"
+        />
         <div id="lightboxTitle"></div>
         <div id="counter"></div>
       </div>
@@ -334,40 +444,40 @@
           return price.toLocaleString("es-AR");
         }
 
-        // Renderiza cada item individual
         function renderMenuItem(item) {
           let pricesHTML = "";
-          if (item.precio) {
+
+          if (item.precio && item.precio_completo) {
+            // Caso: precio simple + precio completo (sandwiches)
+            pricesHTML = `
+      <span class="price">$${formatPrice(item.precio)}</span>
+      <span class="price"><span class="price-label">Completo:</span> $${formatPrice(item.precio_completo)}</span>
+    `;
+          } else if (item.precio) {
             pricesHTML = `<span class="price">$${formatPrice(item.precio)}</span>`;
           } else if (item.precio_gr && item.precio_ch) {
             pricesHTML = `
-                <span class="price"><span class="price-label">GR:</span>$${formatPrice(item.precio_gr)}</span>
-                <span class="price"><span class="price-label">CH:</span>$${formatPrice(item.precio_ch)}</span>
-            `;
+      <span class="price"><span class="price-label">GR:</span> $${formatPrice(item.precio_gr)}</span>
+      <span class="price"><span class="price-label">CH:</span> $${formatPrice(item.precio_ch)}</span>
+    `;
           } else if (item.precio_para_2 && item.precio_para_4) {
             pricesHTML = `
-                <span class="price"><span class="price-label">Para 2:</span>$${formatPrice(item.precio_para_2)}</span>
-                <span class="price"><span class="price-label">Para 4:</span>$${formatPrice(item.precio_para_4)}</span>
-            `;
-          } else if (item.precio_completo) {
-            pricesHTML = `
-                <span class="price">$${formatPrice(item.precio)}</span>
-                <span class="price"><span class="price-label">Completo:</span>$${formatPrice(item.precio_completo)}</span>
-            `;
+      <span class="price"><span class="price-label">Para 2:</span> $${formatPrice(item.precio_para_2)}</span>
+      <span class="price"><span class="price-label">Para 4:</span> $${formatPrice(item.precio_para_4)}</span>
+    `;
           }
 
           return `
-            <div class="menu-item">
-                <div class="item-header">
-                    <div class="item-name">${item.nombre}</div>
-                    <div class="item-prices">${pricesHTML}</div>
-                </div>
-                ${item.descripcion ? `<div class="item-description">${item.descripcion}</div>` : ""}
-                ${item.nota ? `<div class="item-description">${item.nota}</div>` : ""}
-            </div>
-        `;
+    <div class="menu-item">
+      <div class="item-header">
+        <div class="item-name">${item.nombre}</div>
+        <div class="item-prices">${pricesHTML}</div>
+      </div>
+      ${item.descripcion ? `<div class="item-description">${item.descripcion}</div>` : ""}
+      ${item.nota ? `<div class="item-description">${item.nota}</div>` : ""}
+    </div>
+  `;
         }
-
         // Carga un JSON específico y lo muestra
         async function showCategory(fileName) {
           try {
@@ -457,8 +567,8 @@
         <div class="footer-col">
           <h4>Horarios</h4>
           <ul>
-            <li><strong>México 1599</strong><br />10:00 a 00:00 hs</li>
-            <li><strong>Lavalle 168</strong><br />10:00 a 01:00 hs</li>
+            <li><strong>México 1599</strong><br />09:00 a 00:30 hs</li>
+            <!-- <li><strong>Lavalle 168</strong><br />10:00 a 01:00 hs</li> -->
           </ul>
 
           <h4>Medios de Pago</h4>
@@ -477,20 +587,20 @@
               – CABA
             </li>
             <li>
-              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Lavalle 168
-              – CABA
+              <!--   <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Lavalle 168
+            – CABA -->
             </li>
             <li>
               <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-              <a href="mailto:info@elfortinporteno.com.ar"
-                >elfortinporteno@gmail.com</a
+              <a href="mailto:elfortinporteno@gmail.com">
+                elfortinporteno@gmail.com</a
               >
             </li>
 
             <li>
               <i class="bi bi-instagram" aria-hidden="true"></i>
-              <a href="https://instagram.com/elfortinporteno" target="_blank"
-                >@elfortinporteno</a
+              <a href="https://instagram.com/elfortinporteno" target="_blank">
+                @elfortinporteno</a
               >
             </li>
             <li>
@@ -508,22 +618,13 @@
         <!-- COLUMNA 4 -->
         <div class="footer-col footer-mapa">
           <h4>Cómo llegar</h4>
-          <iframe
-            src="https://www.google.com/maps/d/u/1/embed?mid=1ZRxHWA5Sg0zI-zbypmWkrt3W9c17L5U&ehbc=2E312F&noprof=1"
-            width="100%"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.41998763199!2d-58.42487418916014!3d-34.61547579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0035744d2b%3A0xae2107494ca4b28e!2sEl%20Fortin%20Porte%C3%B1o%20-%20Monserrat!5e0!3m2!1ses-419!2sar!4v1771388185055!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>
-          © 2026 www.elfortinporteno.com.ar <br />
+          © 2026 elfortinporteno.com.ar <br />
           Bodegón en Buenos Aires
         </p>
       </div>
@@ -547,7 +648,7 @@
           <div class="logo-bundle">
             <img src="imagen/logo-fuego.jpg" alt="Logo" />
             <div>
-              <h1 class="titulo-damion">El Fortín Porteño</h1>
+              <h2 class="titulo-damion">El Fortín Porteño</h2>
               <span class="subtitulo-lato">Reserva tu Mesa</span>
             </div>
           </div>
@@ -564,7 +665,7 @@
               <label>Sucursal</label>
               <select id="sucursal">
                 <option value="Mexico 1599">México 1599</option>
-                <option value="Lavalle 168">Lavalle 168</option>
+            <!--     <option value="Lavalle 168">Lavalle 168</option> -->
               </select>
             </div>
 

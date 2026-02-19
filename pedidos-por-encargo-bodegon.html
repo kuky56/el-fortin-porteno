@@ -1,169 +1,162 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedidos por Encargo | El Fortín Porteño</title>
-    <meta
-      name="description"
-      content="Encargá nuestras especialidades: Milanesas gigantes, pernil de cerdo y matambre casero. Sabores del bodegón para llevar a tu mesa."
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<head>
+  <!-- ========== META TAGS ESENCIALES ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedidos por Encargo | El Fortín Porteño</title>
+  <meta name="description"
+    content="Encargá nuestras especialidades: Milanesas gigantes, pernil de cerdo y matambre casero. Sabores del bodegón para llevar a tu mesa." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://elfortinporteno.com.ar/pedidos-por-encargo-bodegon.html" />
+
+  <!-- ========== GEO TAGS ========== -->
+  <meta name="geo.region" content="AR-C" />
+  <meta name="geo.placename" content="Buenos Aires" />
+  <meta name="geo.position" content="-34.6177;-58.3838" />
+  <meta name="ICBM" content="-34.6177, -58.3838" />
+
+  <!-- ========== OPEN GRAPH ========== -->
+  <meta property="og:title" content="Pedidos por Encargo | El Fortín Porteño" />
+  <meta property="og:description" content="Comida casera por encargo en Buenos Aires." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://elfortinporteno.com.ar/pedidos-por-encargo-bodegon.html" />
+  <meta property="og:image" content="https://elfortinporteno.com.ar/imagen/pc/frente-local.jpg" />
+
+  <!-- ========== TWITTER ========== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pedidos por Encargo El Fortín Porteño" />
+  <meta name="twitter:description" content="Especialidades de bodegón para encargo en CABA." />
+  <meta name="twitter:image" content="https://elfortinporteno.com.ar/imagen/pc/frente-local.jpg" />
+
+  <!-- ========== PRECONEXIONES A CDN (Reduce latencia) ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+  <!-- ========== GOOGLE FONTS - ASINCRÓNICO (MODERNO) ========== -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
+    as="style" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <noscript>
     <link
       href="https://fonts.googleapis.com/css2?family=Damion&family=Cabin:wght@400;700&family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-modal.css" />
-    <link
-      rel="canonical"
-      href="https://www.elfortinporteno.com.ar/pedidos-por-encargo-bodegon.html"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="favicones/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="favicones/android-icon-48x48.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="favicones/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="favicones/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="favicones/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="favicones/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="favicones/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="favicones/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicones/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="favicones/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicones/favicon-32x32.png"
-    />
-    <link
-      rel="icono"
-      tipo="image/png"
-      tamaños="96x96"
-      href="favicones/favicon-96x96.png"
-    />
-    <link
-      rel="icono"
-      tipo="image/png"
-      tamaños="16x16"
-      href="favicones/favicon-16x16.png"
-    />
-    <link rel="manifiesto" href="favicones/manifiesto.json" />
-    <meta nombre="msapplication-TileColor" contenido="#ffffff" />
-    <meta
-      nombre="msapplication-TileImage"
-      contenido="favicones/ms-icon-144x144.png"
-    />
-    <meta nombre="theme-color" contenido="#ffffff" />
+      rel="stylesheet" />
+  </noscript>
+  <!-- ========== CSS CRÍTICO (Bloqueante pero necesario) ========== -->
+  <link rel="stylesheet" href="style.css" />
 
-    <meta
-      property="og:title"
-      content="Pedidos por Encargo | El Fortín Porteño"
-    />
-    <meta
-      property="og:description"
-      content="Comida casera por encargo en Buenos Aires."
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://www.elfortinporteno.com.ar/pedidos-por-encargo-bodegon.html"
-    />
-    <meta
-      property="og:image"
-      content="https://www.elfortinporteno.com.ar/imagen/pc/frente-local.jpg"
-    />
+  <!-- ========== BOOTSTRAP ICONS - OPTIMIZADO ========== -->
+  <!-- Preload de la fuente woff2 (carga en paralelo) -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2"
+    as="font" type="font/woff2" crossorigin />
 
-    <!-- Schema Markup SEO - Pedidos por Encargo -->
-    <script type="application/ld+json">
+  <!-- CSS de Bootstrap Icons (diferido con media=print) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    media="print" onload="this.media='all'" />
+
+  <!-- Asegurar font-display: swap para prevenir FOIT y mejorar CLS -->
+  <style>
+    @font-face {
+      font-family: 'bootstrap-icons';
+      font-display: swap;
+      src: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+  <style>
+    /* estilo del h1 */
+    /* MEDIA QUERY PARA CELULARES */
+    @media screen and (max-width: 480px) {
+      .texto-bodegon {
+        font-size: 0.9rem !important;
+        /* Aquí achicamos la letra */
+        letter-spacing: 2px !important;
+        /* Achicamos el espacio para que entre en una línea */
+      }
+    }
+  </style>
+  <!-- ========== CSS MODAL - DIFERIDO ========== -->
+  <!-- Solo se necesita cuando se abre un modal, se carga en background -->
+  <link rel="stylesheet" href="style-modal.css" media="print" onload="this.media='all'" />
+
+  <!-- ========== FAVICONES ========== -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicones/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="favicones/android-icon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="favicones/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="favicones/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="favicones/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="favicones/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="favicones/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="favicones/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicones/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicones/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicones/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicones/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicones/favicon-16x16.png" />
+  <link rel="manifest" href="favicones/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="favicones/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+<link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- ========== SCHEMA MARKUP SEO - PEDIDOS POR ENCARGO ========== -->
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "FoodEstablishment",
         "name": "Pedidos por Encargo - El Fortín Porteño",
         "servesCuisine": "Cocina porteña y comida casera",
         "areaServed": "Ciudad Autónoma de Buenos Aires",
-        "url": "https://www.elfortinporteno.com.ar/pedidos-por-encargo-bodegon.html",
+        "url": "https://elfortinporteno.com.ar/pedidos-por-encargo-bodegon.html",
         "telephone": "+5491170360708"
       }
     </script>
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="ribbon-arg" aria-hidden="true">
-        <span>Hecho en Argentina</span>
+</head>
+
+<body>
+  <!-- CABECERA CON TEXTURA (Imagen 3) -->
+  <header class="main-header">
+    <div class="ribbon-arg" aria-hidden="true">
+      <span>Hecho en Argentina</span>
+    </div>
+
+    <div class="header-content">
+      <h1 class="titulo-principal">
+        El Fortín Porteño <br /><span class="texto-bodegon" style="
+              font-size: 1.2rem;
+              font-weight: normal;
+              letter-spacing: 4px;
+              display: block;
+              margin-top: 5px;
+              color: #fdf5e6;">
+          BODEGÓN en MONSERRAT
+        </span>
+      </h1>
+      <div class="subtitulo-wrapper">
+        <div class="linea"></div>
+        <h2 class="subtitulo">Restaurante | Parrilla | Pizzería</h2>
+        <div class="linea"></div>
       </div>
+    </div>
 
-      <div class="header-content">
-        <h1 class="titulo-principal">El Fortín Porteño</h1>
-        <div class="subtitulo-wrapper">
-          <div class="linea"></div>
-          <h2 class="subtitulo">Bodegón | Parrilla | Pizzería</h2>
-          <div class="linea"></div>
-        </div>
-      </div>
 
-      <!-- Logo como fondo difuminado -->
-      <img
-        src="imagen/logo-fuego3.png"
-        alt="Logo El Fortín porteño"
-        class="logo"
-      />
-    </header>
+    <!-- Logo como fondo difuminado -->
+    <img src="imagen/logo-fuego3.png" alt="Logo El Fortín porteño" class="logo" />
+  </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="navbar">
-      <button class="menu-toggle" id="menu-btn">☰</button>
-      <ul class="nav-menu" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="nuestra-historia-bodegon.html">Nuestra historia</a></li>
-        <li><a href="menu-bodegon.html">Menú</a></li>
-        <!--   <li class="dropdown">
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav class="navbar">
+    <button class="menu-toggle" id="menu-btn">☰</button>
+    <ul class="nav-menu" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="nuestra-historia-bodegon.html">Nuestra historia</a></li>
+      <li><a href="menu-bodegon.html">Menú</a></li>
+      <!--   <li class="dropdown">
                 <a href="#">Servicios Especiales <span class="flecha">⌵</span></a>
                 <ul class="dropdown-content">
                     <li><a href="#">Catering</a></li>
@@ -171,606 +164,486 @@
                     <li><a href="#">Pedidos por encargo</a></li>
                 </ul>
             </li> -->
-        <li><a href="catering-chef-bodegon.html">Catering y Chef</a></li>
-        <!--  <li><a href="#">de Eventos</a></li> -->
-        <li>
-          <a href="pedidos-por-encargo-bodegon.html">Pedidos por encargo</a>
-        </li>
-        <li><a href="eventos-sociales-bodegon.html">Eventos Sociales</a></li>
-        <li><a href="delivery-bodegon.html">Delivery</a></li>
-        <li><a href="contacto-bodegon.html">Contacto</a></li>
-        <li>
-          <a
-            href="javascript:void(0)"
-            onclick="abrirReserva()"
-            class="btn-reserva"
-            >Reservas</a
-          >
-        </li>
-      </ul>
-    </nav>
+      <li><a href="catering-chef-bodegon.html">Catering y Chef</a></li>
+      <!--  <li><a href="#">de Eventos</a></li> -->
+      <li>
+        <a href="pedidos-por-encargo-bodegon.html">Pedidos por encargo</a>
+      </li>
+      <li><a href="eventos-sociales-bodegon.html">Eventos Sociales</a></li>
+      <li><a href="delivery-bodegon.html">Delivery</a></li>
+      <li><a href="contacto-bodegon.html">Contacto</a></li>
+      <li>
+        <a href="javascript:void(0)" onclick="abrirReserva()" class="btn-reserva">Reservas</a>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- SECCIÓN HERO  -->
-    <section class="hero">
-      <picture>
-        <!-- Mobile primero -->
-        <source
-          media="(max-width: 500px)"
-          srcset="imagen/movil/pizzas.webp"
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 500px)"
-          srcset="imagen/movil/pizzas.jpg"
-          type="image/jpeg"
-        />
+  <!-- SECCIÓN HERO  -->
+  <section class="hero">
+    <picture>
+      <!-- Mobile primero -->
+      <source media="(max-width: 500px)" srcset="imagen/movil/pizzas.webp" type="image/webp" />
+      <source media="(max-width: 500px)" srcset="imagen/movil/pizzas.jpg" type="image/jpeg" />
 
-        <!-- Desktop -->
-        <source srcset="imagen/pc/pizzas.webp" type="image/webp" />
-        <source srcset="imagen/pc/pizzas.jpg" type="image/jpeg" />
+      <!-- Desktop -->
+      <source srcset="imagen/pc/pizzas.webp" type="image/webp" />
+      <source srcset="imagen/pc/pizzas.jpg" type="image/jpeg" />
 
-        <!-- Fallback -->
-        <img
-          src="imagen/pc/pizzas.jpg"
-          alt="Pizzas especiales del bodegón El Fortín Porteño en Buenos Aires"
-          loading="lazy"
-          class="hero-img"
-        />
-      </picture>
+      <!-- Fallback -->
+      <img src="imagen/pc/pizzas.jpg" alt="Pizzas especiales del bodegón El Fortín Porteño en Buenos Aires"
+        loading="lazy" class="hero-img" />
+    </picture>
 
-      <div class="hero-overlay">
-        <h2 class="hero-seo">
-          Pedidos por encargue en CABA <br />
-          Ideal para eventos<br />y reuniones especiales.
-        </h2>
+    <div class="hero-overlay">
+      <h2 class="hero-seo">
+        Pedidos por encargue en Montserrat <br />
+Opciones para eventos y reuniones
+       
+      </h2>
 
-        <a href="tel:+5491170360708" class="btn-telefono"> 📞 11 7036-0708 </a>
-      </div>
-    </section>
-    <section class="especialidades">
-      <div class="seguiremos">
-        <h2 class="titulo-bodegon">
-          <img
-            src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
-            class="svg-izq"
-            alt=""
-          />
-          Especialidades para Llevar
-          <img
-            src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg"
-            class="svg-der"
-            alt=""
-          />
-        </h2>
-        <p class="texto-especialidades">
-          El Sabor del Fortín en tu Mesa, preparados con tiempo, dedicación y el
-          secreto de nuestra cocina tradicional. Ideales para reuniones
-          familiares, cumpleaños o para darte ese gusto que te merecés en casa.
-          <br />
+      <a href="tel:+5491170360708" class="btn-telefono"><span style="
+        font-size: 25px; 
+        margin-right: 15px; 
+        filter: brightness(0) invert(1);
+    ">
+        📞
+    </span>11 7036-0708 </a>
+    </div>
+  </section>
+  <section class="especialidades">
+    <div class="seguiremos">
+      <h2 class="titulo-bodegon">
+        <img src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg" class="svg-izq" alt="separadores y bordes" />
+        Especialidades para Llevar
+        <img src="separadores y bordes/Elegant-Flourish-Frame-Extrapolated-19.svg" class="svg-der" alt="separadores y bordes" />
+      </h2>
+      <p class="texto-especialidades">
+        El Sabor del Fortín en tu Mesa, preparados con tiempo, dedicación y el
+        secreto de nuestra cocina tradicional. Ideales para reuniones
+        familiares, cumpleaños o para darte ese gusto que te merecés en casa.
+        <br />
 
-          <strong
-            ><em
-              >Nota: Recordá realizar tu pedido con 24 a 48 hs de anticipación
-              para garantizar la frescura y calidad de nuestros productos.</em
-            ></strong
-          >
-        </p>
+        <strong><em>Nota: Recordá realizar tu pedido con 24 a 48 hs de anticipación
+            para garantizar la frescura y calidad de nuestros productos.</em></strong>
+      </p>
 
-        <div class="cards-especialidades">
-          <div class="card">
-            <img
-              src="fotos-comidas/milanesa-napo.jpg"
-              alt="Milanesas Gigantes"
-            />
-            <div class="card-info">
-              <h3>Milanesas Gigantes</h3>
-              <p>
-                Nuestras clásicas "sábanas" de ternera. Napolitana completa,
-                Fugazzetta con cebolla caramelizada o la Especial Fortín (Jamón,
-                morrón y huevo frito).<br /><strong>Comen 4 personas.</strong>
-              </p>
-              <a href="https://wa.me/5491170360708" class="tag"
-                >Encargar Milanesa</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="fotos-comidas/pernil-de-cerdo-por-encargue.jpg"
-              alt="Pernil de Cerdo"
-            />
-            <div class="card-info">
-              <h3>Pernil de Cerdo</h3>
-              <p>
-                Pernil horneado a fuego lento durante 6 horas para lograr la
-                máxima ternura. Incluye
-                <strong>30 figazzas de manteca caseras</strong> y 3 variedades
-                de salsas artesanales.
-              </p>
-              <a href="https://wa.me/5491170360708" class="tag"
-                >Consultar Pernil</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="fotos-comidas/matambre-pernil.jpg"
-              alt="Matambre Casero"
-            />
-            <div class="card-info">
-              <h3>Matambre Casero</h3>
-              <p>
-                Elegí entre nuestro famoso
-                <strong>Matambre Relleno</strong> (clásico frío con huevo y
-                verdura) o el <strong>Matambre a la Pizza</strong> tiernizado
-                con doble mozzarella y papas fritas.
-              </p>
-              <a href="https://wa.me/5491170360708" class="tag"
-                >Pedir Matambre</a
-              >
-            </div>
+      <div class="cards-especialidades">
+        <div class="card">
+          <img src="fotos-comidas/milanesa-napo.webp" alt="Milanesas Gigantes" />
+          <div class="card-info">
+            <h3>Milanesas Gigantes</h3>
+            <p>
+              Nuestras clásicas "sábanas" de ternera. Napolitana completa,
+              Fugazzetta con cebolla caramelizada o la Especial Fortín (Jamón,
+              morrón y huevo frito).<br /><strong>Comen 4 personas.</strong>
+            </p>
+            <a href="https://wa.me/5491170360708" class="tag">Encargar Milanesa</a>
           </div>
         </div>
 
-        <section class="pedidos-encargo">
-          <div class="categoria-pedido">
-            <h3><i class="fas fa-utensils"></i> Para el Picoteo</h3>
-            <ul class="lista-productos">
-              <li>
-                <strong>Nuestra Famosa Tabla de Fiambres:</strong>
-                <span
-                  >Selección premium de embutidos, quesos artesanales y nuestras
-                  clásicas aceitunas marinadas.</span
-                >
-              </li>
-              <li>
-                <strong>Empanadas de Copetín:</strong>
-                <span
-                  >Carne cortada a cuchillo, jamón y queso, o cebolla y queso.
-                  <br /><small>(Mínimo 2 docenas)</small></span
-                >
-              </li>
-            </ul>
+        <div class="card">
+          <img src="fotos-comidas/pernil-de-cerdo-por-encargue.webp" alt="Pernil de Cerdo" />
+          <div class="card-info">
+            <h3>Pernil de Cerdo</h3>
+            <p>
+              Pernil horneado a fuego lento durante 6 horas para lograr la
+              máxima ternura. Incluye
+              <strong>30 figazzas de manteca caseras</strong> y 3 variedades
+              de salsas artesanales.
+            </p>
+            <a href="https://wa.me/5491170360708" class="tag">Consultar Pernil</a>
           </div>
+        </div>
 
-          <div class="categoria-pedido">
-            <h3>
-              <i class="fas fa-drumstick-bite"></i> Platos Fuertes (Tamaño
-              Familiar)
-            </h3>
-            <ul class="lista-productos">
-              <li>
-                <strong>Lasagna Gran Fortín:</strong>
-                <span
-                  >Capas de sabor con abundante boloñesa, jamón, queso y
-                  ricota.</span
-                >
-              </li>
-              <li>
-                <strong>Peceto al Vitel Toné:</strong>
-                <span
-                  >Un clásico que no espera a las fiestas; tierno y con nuestra
-                  salsa especial.</span
-                >
-              </li>
-              <li>
-                <strong>Matambre Casero:</strong>
-                <span
-                  >Relleno con la receta de la abuela, acompañado de ensalada
-                  rusa.</span
-                >
-              </li>
-            </ul>
+        <div class="card">
+          <img src="fotos-comidas/matambre-pernil.webp" alt="Matambre Casero" />
+          <div class="card-info">
+            <h3>Matambre Casero</h3>
+            <p>
+              Elegí entre nuestro famoso
+              <strong>Matambre Relleno</strong> (clásico frío con huevo y
+              verdura) o el <strong>Matambre a la Pizza</strong> tiernizado
+              con doble mozzarella y papas fritas.
+            </p>
+            <a href="https://wa.me/5491170360708" class="tag">Pedir Matambre</a>
           </div>
+        </div>
+      </div>
 
-          <div class="categoria-pedido">
-            <h3><i class="fas fa-cookie"></i> El Rincón Dulce</h3>
-            <ul class="lista-productos">
-              <li>
-                <strong>Tarta de Ricota:</strong>
-                <span>Alta, húmeda y bien casera.</span>
-              </li>
-              <li>
-                <strong>Flan Mixto Familiar:</strong>
-                <span>El broche de oro para cualquier reunión.</span>
-              </li>
-            </ul>
-          </div>
-        </section>
+      <section class="pedidos-encargo">
+        <div class="categoria-pedido">
+          <h3><i class="fas fa-utensils"></i> Para el Picoteo</h3>
+          <ul class="lista-productos">
+            <li>
+              <strong>Nuestra Famosa Tabla de Fiambres:</strong>
+              <span>Selección premium de embutidos, quesos artesanales y nuestras
+                clásicas aceitunas marinadas.</span>
+            </li>
+            <li>
+              <strong>Empanadas de Copetín:</strong>
+              <span>Carne cortada a cuchillo, jamón y queso, o cebolla y queso.
+                <br /><small>(Mínimo 2 docenas)</small></span>
+            </li>
+          </ul>
+        </div>
 
-        <div class="separador-doble"></div>
-        <section class="pedidos-encargo">
-          <div class="categoria-pedido">
-            <h3>
-              <i class="fas fa-fire"></i> Especialidades al Horno y Brasas
-            </h3>
-            <ul class="lista-productos">
-              <li>
-                <span class="recomendado-tag">Recomendado del Chef</span>
-                <strong>Lechón al Horno de Barro:</strong>
-                <span
-                  >Tierno por dentro y con la piel bien crocante. Se entrega
-                  trozado o entero. <br /><small
-                    >(Encargar con 72 hs de antelación)</small
-                  ></span
-                >
-              </li>
-              <li>
-                <strong>Costillar de Novillo:</strong>
-                <span
-                  >Cocción lenta de 4 horas a las brasas. El sabor más auténtico
-                  del Fortín.</span
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="categoria-pedido">
+          <h3>
+            <i class="fas fa-drumstick-bite"></i> Platos Fuertes (Tamaño
+            Familiar)
+          </h3>
+          <ul class="lista-productos">
+            <li>
+              <strong>Lasagna Gran Fortín:</strong>
+              <span>Capas de sabor con abundante boloñesa, jamón, queso y
+                ricota.</span>
+            </li>
+            <li>
+              <strong>Peceto al Vitel Toné:</strong>
+              <span>Un clásico que no espera a las fiestas; tierno y con nuestra
+                salsa especial.</span>
+            </li>
+            <li>
+              <strong>Matambre Casero:</strong>
+              <span>Relleno con la receta de la abuela, acompañado de ensalada
+                rusa.</span>
+            </li>
+          </ul>
+        </div>
 
-          <div class="categoria-pedido">
-            <h3>
-              <i class="fas fa-drumstick-bite"></i> Platos Fuertes (Tamaño
-              Familiar)
-            </h3>
-            <ul class="lista-productos">
-              <li>
-                <span class="recomendado-tag">Recomendado del Chef</span>
-                <strong>Lasagna Gran Fortín:</strong>
-                <span
-                  >Capas de sabor con abundante boloñesa, jamón, queso y
-                  ricota.</span
-                >
-              </li>
-              <li>
-                <span class="recomendado-tag">Recomendado del Chef</span>
-                <strong>Peceto al Vitel Toné:</strong>
-                <span
-                  >Un clásico que no espera a las fiestas; tierno y con nuestra
-                  salsa especial.</span
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
+        <div class="categoria-pedido">
+          <h3><i class="fas fa-cookie"></i> El Rincón Dulce</h3>
+          <ul class="lista-productos">
+            <li>
+              <strong>Tarta de Ricota:</strong>
+              <span>Alta, húmeda y bien casera.</span>
+            </li>
+            <li>
+              <strong>Flan Mixto Familiar:</strong>
+              <span>El broche de oro para cualquier reunión.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <div class="separador-doble"></div>
-        <section class="pedidos-encargo">
-          <div class="categoria-pedido">
-            <h3>
-              <i class="fas fa-bread-slice"></i> Sándwiches de Fiesta (Tamaño
-              XL)
-            </h3>
-            <ul class="lista-productos">
-              <li>
-                <strong>Peceto Completo en Pan de Campo:</strong>
-                <span
-                  >Finas lonjas de peceto, lechuga, tomate, huevo duro y nuestra
-                  mayonesa casera con ajo.</span
-                >
-              </li>
-              <li>
-                <strong>Sándwich de Matambre Arrollado:</strong>
-                <span
-                  >Matambre casero de carne en pan francés crocante, ideal para
-                  comer frío o tibio.</span
-                >
-              </li>
-              <li>
-                <strong>Bondiola al Horno de Barro:</strong>
-                <span
-                  >Desmenuzada, con cebollas caramelizadas y un toque de salsa
-                  barbacoa del Fortín.</span
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="separador-doble"></div>
+      <section class="pedidos-encargo">
+        <div class="categoria-pedido">
+          <h3>
+            <i class="fas fa-fire"></i> Especialidades al Horno y Brasas
+          </h3>
+          <ul class="lista-productos">
+            <li>
+              <span class="recomendado-tag">Recomendado del Chef</span>
+              <strong>Lechón al Horno de Barro:</strong>
+              <span>Tierno por dentro y con la piel bien crocante. Se entrega
+                trozado o entero. <br /><small>(Encargar con 72 hs de antelación)</small></span>
+            </li>
+            <li>
+              <strong>Costillar de Novillo:</strong>
+              <span>Cocción lenta de 4 horas a las brasas. El sabor más auténtico
+                del Fortín.</span>
+            </li>
+          </ul>
+        </div>
 
-          <div class="categoria-pedido">
-            <h3>
-              <i class="fas fa-pastafarianism"></i> Pastas Artesanales (Listas
-              para Servir)
-            </h3>
-            <ul class="lista-productos">
-              <li>
-                <strong>Ravioles de Borraja y Cordero:</strong>
-                <span
-                  >Una especialidad única. Se entregan con salsa a elección
-                  (Tuco, Pesto o Crema).</span
-                >
-              </li>
-              <li>
-                <strong>Sorrentinos de Jamón y Queso:</strong>
-                <span
-                  >Bien grandes y cargados, como se sirven en nuestro salón.
-                  <br /><small>(Porción familiar para 4 personas)</small></span
-                >
-              </li>
-              <li>
-                <strong>Salsa Bolognesa "La Porteña":</strong>
-                <span
-                  >Vendemos nuestro famoso tuco por litro, cocinado durante 6
-                  horas para un sabor intenso.</span
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
+        <div class="categoria-pedido">
+          <h3>
+            <i class="fas fa-drumstick-bite"></i> Platos Fuertes (Tamaño
+            Familiar)
+          </h3>
+          <ul class="lista-productos">
+            <li>
+              <span class="recomendado-tag">Recomendado del Chef</span>
+              <strong>Lasagna Gran Fortín:</strong>
+              <span>Capas de sabor con abundante boloñesa, jamón, queso y
+                ricota.</span>
+            </li>
+            <li>
+              <span class="recomendado-tag">Recomendado del Chef</span>
+              <strong>Peceto al Vitel Toné:</strong>
+              <span>Un clásico que no espera a las fiestas; tierno y con nuestra
+                salsa especial.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <div class="separador-doble"></div>
-        <section class="pedidos-encargo">
-          <div class="categoria-pedido">
-            <h3>
-              <i class="fas fa-star"></i> Sugerencias del Fortín (Para
-              Compartir)
-            </h3>
-            <ul class="lista-productos">
-              <li>
-                <span class="recomendado-tag">Recomendado del Chef</span>
-                <strong>Milanesa Napolitana p/2 + Fritas:</strong>
-                <span
-                  >Nuestra clásica milanesa gigante, con jamón, queso y salsa de
-                  tomate casera.</span
-                >
-              </li>
-              <li>
-                <strong>Parrillada para 2 Personas + Fritas:</strong>
-                <span
-                  >Selección de los mejores cortes a la brasa, lista para
-                  disfrutar en familia.</span
-                >
-              </li>
-              <li>
-                <strong>2 Hamburguesas + Fritas:</strong>
-                <span
-                  >Doble carne, cheddar, panceta, lechuga, tomate y huevo frito.
-                  ¡Una bomba!</span
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="separador-doble"></div>
+      <section class="pedidos-encargo">
+        <div class="categoria-pedido">
+          <h3>
+            <i class="fas fa-bread-slice"></i> Sándwiches de Fiesta (Tamaño
+            XL)
+          </h3>
+          <ul class="lista-productos">
+            <li>
+              <strong>Peceto Completo en Pan de Campo:</strong>
+              <span>Finas lonjas de peceto, lechuga, tomate, huevo duro y nuestra
+                mayonesa casera con ajo.</span>
+            </li>
+            <li>
+              <strong>Sándwich de Matambre Arrollado:</strong>
+              <span>Matambre casero de carne en pan francés crocante, ideal para
+                comer frío o tibio.</span>
+            </li>
+            <li>
+              <strong>Bondiola al Horno de Barro:</strong>
+              <span>Desmenuzada, con cebollas caramelizadas y un toque de salsa
+                barbacoa del Fortín.</span>
+            </li>
+          </ul>
+        </div>
 
-          <div class="categoria-pedido">
-            <h3>
-              <i class="fas fa-percentage"></i> Promos de Empanadas y Pizzas
-            </h3>
-            <ul class="lista-productos">
-              <li>
-                <strong>Promo 1: Muzzarella Grande + 6 Empanadas:</strong>
-                <span
-                  >La combinación ideal para resolver cualquier cena
-                  rápidamente.</span
-                >
-              </li>
-              <li>
-                <strong>Docena de Empanadas Fortineras:</strong>
-                <span
-                  >Carne cortada a cuchillo, Pollo, Jamón y Queso, Roquefort,
-                  Caprese o Cebolla y Queso.</span
-                >
-              </li>
-              <li>
-                <strong>Pizza Fugazzeta Rellena:</strong>
-                <span
-                  >Especialidad de la casa, abundante queso y cebollas
-                  doradas.</span
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-        <div class="separador-doble"></div>
-        <div
-          class="info-pedidos"
-          style="
+        <div class="categoria-pedido">
+          <h3>
+            <i class="fas fa-pastafarianism"></i> Pastas Artesanales (Listas
+            para Servir)
+          </h3>
+          <ul class="lista-productos">
+            <li>
+              <strong>Ravioles de Borraja y Cordero:</strong>
+              <span>Una especialidad única. Se entregan con salsa a elección
+                (Tuco, Pesto o Crema).</span>
+            </li>
+            <li>
+              <strong>Sorrentinos de Jamón y Queso:</strong>
+              <span>Bien grandes y cargados, como se sirven en nuestro salón.
+                <br /><small>(Porción familiar para 4 personas)</small></span>
+            </li>
+            <li>
+              <strong>Salsa Bolognesa "La Porteña":</strong>
+              <span>Vendemos nuestro famoso tuco por litro, cocinado durante 6
+                horas para un sabor intenso.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="separador-doble"></div>
+      <section class="pedidos-encargo">
+        <div class="categoria-pedido">
+          <h3>
+            <i class="fas fa-star"></i> Sugerencias del Fortín (Para
+            Compartir)
+          </h3>
+          <ul class="lista-productos">
+            <li>
+              <span class="recomendado-tag">Recomendado del Chef</span>
+              <strong>Milanesa Napolitana p/2 + Fritas:</strong>
+              <span>Nuestra clásica milanesa gigante, con jamón, queso y salsa de
+                tomate casera.</span>
+            </li>
+            <li>
+              <strong>Parrillada para 2 Personas + Fritas:</strong>
+              <span>Selección de los mejores cortes a la brasa, lista para
+                disfrutar en familia.</span>
+            </li>
+            <li>
+              <strong>2 Hamburguesas + Fritas:</strong>
+              <span>Doble carne, cheddar, panceta, lechuga, tomate y huevo frito.
+                ¡Una bomba!</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="categoria-pedido">
+          <h3>
+            <i class="fas fa-percentage"></i> Promos de Empanadas y Pizzas
+          </h3>
+          <ul class="lista-productos">
+            <li>
+              <strong>Promo 1: Muzzarella Grande + 6 Empanadas:</strong>
+              <span>La combinación ideal para resolver cualquier cena
+                rápidamente.</span>
+            </li>
+            <li>
+              <strong>Docena de Empanadas Fortineras:</strong>
+              <span>Carne cortada a cuchillo, Pollo, Jamón y Queso, Roquefort,
+                Caprese o Cebolla y Queso.</span>
+            </li>
+            <li>
+              <strong>Pizza Fugazzeta Rellena:</strong>
+              <span>Especialidad de la casa, abundante queso y cebollas
+                doradas.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="separador-doble"></div>
+      <div class="info-pedidos" style="
             text-align: center;
             margin-top: 40px;
             background: #fdf5e6;
             padding: 30px;
             border-radius: 8px;
-          "
-        >
-          <h3>¿Cómo realizar tu pedido?</h3>
-          <p style="text-align: center">
-            1. Elegí tu plato. | 2. Comunicate por WhatsApp. | 3. Retirá por el
-            Fortín.
-          </p>
-          <p style="text-align: center">
-            <strong>📍 México 1599 / Lavalle 168 - CABA</strong>
-          </p>
+          ">
+        <h3>¿Cómo realizar tu pedido?</h3>
+        <p style="text-align: center">
+          1. Elegí tu plato. | 2. Comunicate por WhatsApp. | 3. Retirá por el
+          Fortín.
+        </p>
+        <p style="text-align: center">
+          <strong>📍 México 1599 - CABA</strong>
+        </p>
 
-          <a href="https://wa.me/5491170360708" class="tag"
-            >📞 Llamar para consultar</a
-          >
-        </div>
-
-        <div class="separador-footer"></div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-contenedor">
-        <!-- COLUMNA 1 -->
-        <div class="footer-col">
-          <h4 style="display: flex; align-items: center; gap: 10px">
-            El Fortín Porteño
-            <img
-              src="bandera.jpg"
-              alt="Bandera de Argentina"
-              style="width: 30px; height: auto"
-            />
-          </h4>
-          <p>
-            Bodegón tradicional con auténtico sabor porteño. Cocina casera,
-            platos clásicos y porciones abundantes.
-          </p>
-        </div>
-        <!-- COLUMNA 3 -->
-        <div class="footer-col">
-          <h4>Horarios</h4>
-          <ul>
-            <li><strong>México 1599</strong><br />10:00 a 00:00 hs</li>
-            <li><strong>Lavalle 168</strong><br />10:00 a 01:00 hs</li>
-          </ul>
-
-          <h4>Medios de Pago</h4>
-          <p>Efectivo · Tarjetas crédito y débito · Transferencias</p>
-        </div>
-        <!-- COLUMNA 2 -->
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul>
-            <li>
-              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
-              <a href="tel:1170360708">11 7036-0708</a>
-            </li>
-            <li>
-              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> México 1599
-              – CABA
-            </li>
-            <li>
-              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Lavalle 168
-              – CABA
-            </li>
-            <li>
-              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-              <a href="mailto:info@elfortinporteno.com.ar">
-                elfortinporteno@gmail.com</a
-              >
-            </li>
-
-            <li>
-              <i class="bi bi-instagram" aria-hidden="true"></i>
-              <a href="https://instagram.com/elfortinporteno" target="_blank">
-                @elfortinporteno</a
-              >
-            </li>
-            <li>
-              <i class="bi bi-whatsapp" aria-hidden="true"></i>
-              <a
-                href="https://wa.me/5491170360708"
-                target="_blank"
-                aria-label="WhatsApp"
-                >11 7036-0708</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- COLUMNA 4 -->
-        <div class="footer-col footer-mapa">
-          <h4>Cómo llegar</h4>
-          <iframe
-            src="https://www.google.com/maps/d/u/1/embed?mid=1ZRxHWA5Sg0zI-zbypmWkrt3W9c17L5U&ehbc=2E312F&noprof=1"
-            width="100%"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </div>
+        <a href="https://wa.me/5491170360708" class="tag"><span style="
+        font-size: 25px; 
+        margin-right: 15px; 
+filter: brightness(1.2) sepia(1) saturate(20) hue-rotate(15deg);
+    ">
+        📞
+    </span>Llamar para consultar</a>
       </div>
 
-      <div class="footer-bottom">
+      <div class="separador-footer"></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <!-- COLUMNA 1 -->
+      <div class="footer-col">
+        <h4 style="display: flex; align-items: center; gap: 10px">
+          El Fortín Porteño
+          <img src="bandera.jpg" alt="Bandera de Argentina" style="width: 30px; height: auto" />
+        </h4>
         <p>
-          © 2026 www.elfortinporteno.com.ar <br />
-          Bodegón en Buenos Aires
+          Bodegón tradicional con auténtico sabor porteño. Cocina casera,
+          platos clásicos y porciones abundantes.
         </p>
       </div>
-    </footer>
+      <!-- COLUMNA 3 -->
+      <div class="footer-col">
+        <h4>Horarios</h4>
+        <ul>
+          <li><strong>México 1599</strong><br />09:00 a 00:30 hs</li>
+     <!--      <li><strong>Lavalle 168</strong><br />10:00 a 01:00 hs</li> -->
+        </ul>
 
-    <script src="script.js"></script>
-    <script src="script-modal.js"></script>
-    <a
-      href="https://wa.me/5491170360708"
-      class="whatsapp-float"
-      target="_blank"
-      aria-label="Chat en WhatsApp"
-      ><i class="bi bi-whatsapp"></i
-    ></a>
+        <h4>Medios de Pago</h4>
+        <p>Efectivo · Tarjetas crédito y débito · Transferencias</p>
+      </div>
+      <!-- COLUMNA 2 -->
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>
+            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+            <a href="tel:1170360708">11 7036-0708</a>
+          </li>
+          <li>
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> México 1599
+            – CABA
+          </li>
+         <!--  <li>
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Lavalle 168
+            – CABA
+          </li> -->
+          <li>
+            <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+            <a href="mailto: elfortinporteno@gmail.com">
+              elfortinporteno@gmail.com</a>
+          </li>
 
-    <div id="modalReserva" class="modal-overlay-bg">
-      <div class="modal-page-box">
-        <div class="modal-header-compact">
-          <div class="logo-bundle">
-            <img src="imagen/logo-fuego.jpg" alt="Logo" />
-            <div>
-              <h1 class="titulo-damion">El Fortín Porteño</h1>
-              <span class="subtitulo-lato">Reserva tu Mesa</span>
-            </div>
-          </div>
-          <button class="btn-cerrar-giro" onclick="cerrarReserva()">✕</button>
-        </div>
+          <li>
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+            <a href="https://instagram.com/elfortinporteno" target="_blank">
+              @elfortinporteno</a>
+          </li>
+          <li>
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            <a href="https://wa.me/5491170360708" target="_blank" aria-label="WhatsApp">11 7036-0708</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="modal-body-compact">
-          <form id="formReserva" class="form-container-flex">
-            <div class="field">
-              <label>Nombre y Apellido</label>
-              <input type="text" id="nombre" placeholder="Tu nombre" required />
-            </div>
-            <div class="field">
-              <label>Sucursal</label>
-              <select id="sucursal">
-                <option value="Mexico 1599">México 1599</option>
-                <option value="Lavalle 168">Lavalle 168</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label>WhatsApp</label>
-              <input
-                type="tel"
-                id="telefono"
-                placeholder="11 1234 5678"
-                required
-              />
-            </div>
-            <div class="field">
-              <label>Personas</label>
-              <select id="personas">
-                <option value="2">2 Personas</option>
-                <option value="4">4 Personas</option>
-                <option value="6">6 Personas</option>
-                <option value="8+">Grupo Grande</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label>Fecha</label>
-              <input type="date" id="fecha" required />
-            </div>
-            <div class="field">
-              <label>Hora</label>
-              <input type="time" id="hora" required />
-            </div>
-
-            <div class="field full">
-              <label>Notas</label>
-              <textarea
-                id="notas"
-                placeholder="Ej: Cumpleaños, celíacos..."
-              ></textarea>
-            </div>
-
-            <div class="btn-group-center">
-              <button
-                type="button"
-                class="btn-envio-outline btn-wa"
-                onclick="enviarReserva('wa')"
-              >
-                WhatsApp
-              </button>
-              <button
-                type="button"
-                class="btn-envio-outline btn-mail"
-                onclick="enviarReserva('mail')"
-              >
-                Email
-              </button>
-            </div>
-          </form>
-        </div>
+      <!-- COLUMNA 4 -->
+      <div class="footer-col footer-mapa">
+        <h4>Cómo llegar</h4>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.41998763199!2d-58.42487418916014!3d-34.61547579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0035744d2b%3A0xae2107494ca4b28e!2sEl%20Fortin%20Porte%C3%B1o%20-%20Monserrat!5e0!3m2!1ses-419!2sar!4v1771388185055!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-  </body>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 elfortinporteno.com.ar <br />
+        Bodegón en Buenos Aires
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="script-modal.js"></script>
+  <a href="https://wa.me/5491170360708" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp"><i
+      class="bi bi-whatsapp"></i></a>
+
+  <div id="modalReserva" class="modal-overlay-bg">
+    <div class="modal-page-box">
+      <div class="modal-header-compact">
+        <div class="logo-bundle">
+          <img src="imagen/logo-fuego.jpg" alt="Logo" />
+          <div>
+            <h2 class="titulo-damion">El Fortín Porteño</h2>
+            <span class="subtitulo-lato">Reserva tu Mesa</span>
+          </div>
+        </div>
+        <button class="btn-cerrar-giro" onclick="cerrarReserva()">✕</button>
+      </div>
+
+      <div class="modal-body-compact">
+        <form id="formReserva" class="form-container-flex">
+          <div class="field">
+            <label>Nombre y Apellido</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="field">
+            <label>Sucursal</label>
+            <select id="sucursal">
+              <option value="Mexico 1599">México 1599</option>
+  <!--             <option value="Lavalle 168">Lavalle 168</option> -->
+            </select>
+          </div>
+
+          <div class="field">
+            <label>WhatsApp</label>
+            <input type="tel" id="telefono" placeholder="11 1234 5678" required />
+          </div>
+          <div class="field">
+            <label>Personas</label>
+            <select id="personas">
+              <option value="2">2 Personas</option>
+              <option value="4">4 Personas</option>
+              <option value="6">6 Personas</option>
+              <option value="8+">Grupo Grande</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Fecha</label>
+            <input type="date" id="fecha" required />
+          </div>
+          <div class="field">
+            <label>Hora</label>
+            <input type="time" id="hora" required />
+          </div>
+
+          <div class="field full">
+            <label>Notas</label>
+            <textarea id="notas" placeholder="Ej: Cumpleaños, celíacos..."></textarea>
+          </div>
+
+          <div class="btn-group-center">
+            <button type="button" class="btn-envio-outline btn-wa" onclick="enviarReserva('wa')">
+              WhatsApp
+            </button>
+            <button type="button" class="btn-envio-outline btn-mail" onclick="enviarReserva('mail')">
+              Email
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
